@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/white_color">
+
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerInside"
+        android:src="@drawable/weblogo" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/imageViewTitle">
+
+        <WebView
+            android:id="@+id/mainWebView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/btn_back" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18.0dip"
+        android:layout_toRightOf="@id/imageViewTitle"
+        android:text="@string/app_full_name"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@drawable/black_color"
+        android:textSize="32.0dip" />
+</RelativeLayout>

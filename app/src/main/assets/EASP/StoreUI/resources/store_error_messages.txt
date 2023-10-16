@@ -1,0 +1,261 @@
+{
+	"strings":
+	[
+		{
+			"en":
+			[
+				{
+					"-1111":"To access your data, deactivate flight mode or use Wi-Fi",
+					"-2222":"To access your data, deactivate flight mode or use Wi-Fi",
+					"-3333":"Message 3333: Purchase cancelled.",
+					"-4444":"Error 4444: Purchasing server error or marketplace was minimized. Please try again later or restart the application.",
+					"-5555":"Message 5555: Restore cancelled.",										"-5556":"Message 5556: Downloading cancelled.",
+					"-6666":"Error 6666: Restoring server error or marketplace was minimized. Please try again later or restart the application.",
+					"-8888":"Error 8888: Insufficient space.  Please free up some space and try again.",
+					"-10001":"Error 10001: Master Item not found.",
+					"-10002":"Error 10002: Could not access profile.",
+					"-10003":"Error 10003: Insufficient privilege.",
+					"-10004":"Error 10004: Insufficient privilege.",
+					"-10005":"Message 10005: To access the in-game store please upgrade to the latest version of this application.",
+					"-10006":"Error 10006: Could not access item.",
+					"-10007":"Error 10007: Language not supported for this product.",                    					"-13002":"Error 13002: Oops! Something went wrong...",                  
+					"-21002":"Error 21002: Could not access profile.",
+					"-21008":"Error 21008: Could not access profile.",
+					"-30001":"Error 30001: Could not access profile.",
+					"-30002":"Error 30002: Could not access item.",
+					"-30003":"Error 30003: Error validating receipt.",
+					"-30004":"Error 30004: Error validating purchase.",
+					"-30005":"Message 30005: Download limit exceeded.",
+					"-30006":"Error 30006: Access denied.",
+					"-30007":"Error 30007: Error validating purchase.",
+					"-30008":"Message 30008: Restore limit exceeded.",                                        "-44443":"Error 44443: Could not log in Google Play. Please make sure that you have an active account on Google Play.",
+                    "-44444":"Error 44444: Could not log in App Store. Please make sure that you have an active account on App Store."
+
+				}
+			]
+		},
+		{
+			"fr":
+			[
+				{
+					"-1111":"Désactivez le mode Avion ou utilisez Wi-Fi pour accéder à vos données",
+					"-2222":"Désactivez le mode Avion ou utilisez Wi-Fi pour accéder à vos données",
+					"-3333":"Message 3333 : achat annulé.",
+					"-4444":"Erreur 4444 : erreur du serveur pendant l'achat. Veuillez réessayer plus tard.",
+					"-5555":"Message 5555 : restauration annulée.",										"-5556":"Message 5556 : téléchargement cancelled.",
+					"-6666":"Erreur 6666 : Réinitialisation interrompue. Veuillez réessayer.",
+					"-8888":"Erreur 8888 : espace insuffisant. Veuillez libérer de l'espace et réessayer.",
+					"-10001":"Erreur 10001 : impossible de trouver l'élément principal.",
+					"-10002":"Erreur 10002 : impossible d'accéder au profil.",
+					"-10003":"Erreur 10003 : privilèges insuffisants.",
+					"-10004":"Erreur 10004 : privilèges insuffisants.",
+					"-10005":"Message 10005 : pour accéder à la boutique du jeu, veuillez télécharger la dernière mise à jour de cette application.",
+					"-10006":"Erreur 10006 : impossible d'accéder à l'élément.",
+					"-10007":"Erreur 10007 : ce produit ne prend pas en charge cette langue.",                    					"-13002":"Erreur 13002: Aïe ! Il y a eu un problème...",                      
+					"-21002":"Erreur 21002 : impossible d'accéder au profil.",
+					"-21008":"Erreur 21008 : impossible d'accéder au profil.",
+					"-30001":"Erreur 30001 : impossible d'accéder au profil.",
+					"-30002":"Erreur 30002 : impossible d'accéder à l'élément.",
+					"-30003":"Erreur 30003 : erreur de validation de la réception.",
+					"-30004":"Erreur 30004 : erreur de validation de l'achat.",
+					"-30005":"Message 30005 : dépassement de la limite du téléchargement.",
+					"-30006":"Erreur 30006 : accès refusé.",
+					"-30007":"Erreur 30007 : erreur de validation de l'achat.",
+					"-30008":"Message 30008 : dépassement de la limite de restauration.",                                        "-44443":"Error 44443: Impossible de se connecter sur l'Google Play. S'il vous plaît assurez-vous d'avoir un compte actif sur Google Play.",
+                    "-44444":"Error 44444: Impossible de se connecter sur l'App Store. S'il vous pla�Rt assurez-vous d'avoir un compte actif sur App Store."
+
+				}
+			]
+		},
+		{
+			"it":
+			[
+				{
+					"-1111":"Disattiva la modalità di uso in aereo o usa il Wi-Fi per accedere ai dati",
+					"-2222":"Disattiva la modalità di uso in aereo o usa il Wi-Fi per accedere ai dati",
+					"-3333":"Messaggio 3333: acquisto annullato.",
+					"-4444":"Errore 4444: errore del server nell'operazione d'acquisto. Riprova più tardi.",
+					"-5555":"Messaggio 5555: Ripristino annullato.",										"-5556":"Messaggio 5556: Download annullato.",
+					"-6666":"Errore 6666: Ripristino interrotto. Riprovare.",
+					"-8888":"Errore 8888: spazio insufficiente.  Libera dello spazio e riprova.",
+					"-10001":"Errore 10001: impossibile trovare elemento principale.",
+					"-10002":"Errore 10002: impossibile accedere al profilo.",
+					"-10003":"Errore 10003: privilegi insufficienti.",
+					"-10004":"Errore 10004: privilegi insufficienti.",
+					"-10005":"Messaggio 10005: per accedere al negozio interno al gioco esegui un aggiornamento di questa applicazione alla versione più recente.",
+					"-10006":"Errore 10006: impossibile accedere all'elemento.",
+					"-10007":"Errore 10007: lingua non supportata per questo prodotto.",                    "-13002":"Errore 13002: Ops! Si è verificato un errore inatteso.",                    
+					"-21002":"Errore 21002: impossibile accedere al profilo.",
+					"-21008":"Errore 21008: impossibile accedere al profilo.",
+					"-30001":"Errore 30001: impossibile accedere al profilo.",
+					"-30002":"Errore 30002: impossibile accedere all'elemento.",
+					"-30003":"Errore 30003: errore nella convalida della ricevuta.",
+					"-30004":"Errore 30004: errore nella convalida dell'acquisto.",
+					"-30005":"Messaggio 30005: limite di download superato.",
+					"-30006":"Errore 30006: accesso negato.",
+					"-30007":"Errore 30007: errore nella convalida dell'acquisto.",
+					"-30008":"Messaggio 30008: limite di ripristino superato.",                    "-44443":"Errore 44443: Impossibile accedere Google Play. Si prega di assicurarsi di avere un account attivo su Google Play.",                                        "-44444":"Errore 44444: Impossibile accedere App Store. Si prega di assicurarsi di avere un account attivo su App Store."
+                    
+				}
+			]
+		},
+		{
+			"de":
+			[
+				{
+					"-1111":"Flugmodus deaktivieren oder Wi-Fi für Datenzugriff verwenden",
+					"-2222":"Flugmodus deaktivieren oder Wi-Fi für Datenzugriff verwenden",
+					"-3333":"Meldung 3333: Kauf abgebrochen.",
+					"-4444":"Fehler 4444: Serverfehler beim Zahlvorgang. Bitte versuche es später erneut.",
+					"-5555":"Meldung 5555: Wiederherstellen abgebrochen.",										"-5556":"Meldung 5556: Herunterladen abgebrochen",
+					"-6666":"Fehler 6666: Wiederherstellung unterbrochen. Bitte erneut versuchen.",
+					"-8888":"Fehle 8888: Nicht genügend Speicherplatz. Bitte mach Speicherplatz frei und versuche es erneut.",
+					"-10001":"Fehler 10001: Das Spiel wurde nicht gefunden.",
+					"-10002":"Fehler 10002: Konnte nicht auf das Profil zugreifen.",
+					"-10003":"Fehler 10003: Unzureichende Benutzerrechte.",
+					"-10004":"Fehler 10004: Unzureichende Benutzerrechte.",
+					"-10005":"Meldung 10005: Für den Ingame-Store benötigst du die aktuelle Version dieser Anwendung.",
+					"-10006":"Fehler 10006: Konnte nicht auf das Objekt zugreifen.",
+					"-10007":"Fehler 10007: Die Sprache wird für dieses Produkt nicht unterstützt.",                                        "-13002":"Fehler 13002: Hoppla! Etwas ist schiefgelaufen ... Ein unerwarteter Fehler ist aufgetreten.",
+					"-21002":"Fehler 21002: Konnte nicht auf das Profil zugreifen.",
+					"-21008":"Fehler 21008: Konnte nicht auf das Profil zugreifen.",
+					"-30001":"Fehler 30001: Konnte nicht auf das Profil zugreifen.",
+					"-30002":"Fehler 30002: Konnte nicht auf das Objekt zugreifen.",
+					"-30003":"Fehler 30003: Fehler bei der Eingangsbestätigung.",
+					"-30004":"Fehler 30004: Fehler bei der Kaufbestätigung.",
+					"-30005":"Meldung 30005: Download-Limit überschritten.",
+					"-30006":"Fehler 30006: Zugriff verweigert.",
+					"-30007":"Fehler 30007: Fehler bei der Kaufbestätigung.",
+					"-30008":"Meldung 30008: Wiederherstellen-Limit überschritten.",                    "-44443":"Fehler 44443: Konnte nicht in Google Play anmelden. Bitte stellen Sie sicher, dass Sie einen aktiven Account im Google Play zu haben.",                                        "-44444":"Fehler 44444: Konnte nicht in App Store anmelden. Bitte stellen Sie sicher, dass Sie einen aktiven Account im App Store zu haben."
+                    
+				}
+			]
+		},
+		{
+			"es":
+			[
+				{
+					"-1111":"Para acceder a tus datos, desactiva el Avión o usa Wi-Fi",
+					"-2222":"Para acceder a tus datos, desactiva el Avión o usa Wi-Fi",
+					"-3333":"Mensaje 3333: Compra cancelada.",
+					"-4444":"Error 4444: Error del servidor durante la operación de compra. Inténtalo de nuevo.",
+					"-5555":"Mensaje 5555: Restauración cancelada.",										"-5556":"Mensaje 5556: Descargar cancelado.",
+					"-6666":"Error 6666: Restauración interrumpida. Vuelve a intentarlo.",
+					"-8888":"Error 8888: Espacio insuficiente.  Por favor libera algo de espacio e inténtalo de nuevo.",
+					"-10001":"Error 10001: no se encontró el elemento maestro.",
+					"-10002":"Error 10002: no se pudo acceder al perfil.",
+					"-10003":"Error 10003: privilegios insuficientes.",
+					"-10004":"Error 10004: privilegios insuficientes.",
+					"-10005":"Mensaje 10005: para poder acceder a la tienda del juego, actualiza a la última versión de esta aplicación.",
+					"-10006":"Error 10006: no se pudo acceder al artículo.",
+					"-10007":"Error 10007: este idioma no está disponible para este producto.",                                        "-13002":"Error 13002: ¡Vaya! Algo ha ido mal... Ha ocurrido un error inesperado.",
+					"-21002":"Error 21002: no se pudo acceder al perfil.",
+					"-21008":"Error 21008: no se pudo acceder al perfil.",
+					"-30001":"Error 30001: no se pudo acceder al perfil.",
+					"-30002":"Error 30002: no se pudo acceder al artículo.",
+					"-30003":"Error 30003: error al validar el recibo.",
+					"-30004":"Error 30004: error al validar la compra.",
+					"-30005":"Mensaje 30005: se ha sobrepasado el límite de descargas.",
+					"-30006":"Error 30006: acceso denegado.",
+					"-30007":"Error 30007: error al validar la compra.",
+					"-30008":"Mensaje 30008: se ha sobrepasado el límite de restauraciones.",                    "-44443":"No se pudo iniciar sesión en el Google Play. Por favor, asegúrese de que usted tiene una cuenta activa en el Google Play.",                    					"-44444":"No se pudo iniciar sesi�_n en el App Store. Por favor, asegúrese de que usted tiene una cuenta activa en el App Store."
+                    
+				}
+			]
+		},
+		{
+			"ja":
+			[
+				{
+					"-1111":"データにアクセスするには、機内モードをオフにするか、Wi-Fiを使用してください",
+					"-2222":"データにアクセスするには、機内モードをオフにするか、Wi-Fiを使用してください",
+					"-3333":"メッセージ3333: 購入後のキャンセル。",
+					"-4444":"エラー4444: 購買サーバーエラー。後でやり直してください。",
+					"-5555":"メッセージ5555: キャンセルを復元します。",										"-5556":"メッセージ5556: キャンセルのダウンロード。",
+					"-6666":"エラー6666: 修復できませんでした。もう一度お試し下さい。",
+					"-8888":"エラー8888: 空き容量が不足しています。十分の空き容量を確保してから再度お試しください。",
+					"-10001":"エラー10001: ゲームが見つかりませんでした。",
+					"-10002":"エラー10002: プロフィールにアクセスできませんでした。",
+					"-10003":"エラー10003: 権限がありません。",
+					"-10004":"エラー10004: 権限がありません。",
+					"-10005":"メッセージ10005: インゲームストアにアクセスするには、このアプリケーションの最新版にアップグレードする必要があります。",
+					"-10006":"エラー10006: アイテムにアクセルできませんでした。",
+					"-10007":"エラー10007: この商品では対応されていない言語です。",                                        "-13002":"エラー13002: 問題が発生しました。予期しないエラーが発生しました。",
+					"-21002":"エラー21002: プロフィールにアクセスできませんでした。",
+					"-21008":"エラー21008: プロフィールにアクセスできませんでした。",
+					"-30001":"エラー30001: プロフィールにアクセスできませんでした。",
+					"-30002":"エラー30002: アイテムにアクセスできませんでした。",
+					"-30003":"エラー30003: レシートの有効化でエラーが発生しました。",
+					"-30004":"エラー30004: 購入の有効化でエラーが発生しました。",
+					"-30005":"メッセージ30005: ダウンロード制限を越えました。",
+					"-30006":"",
+					"-30007":"エラー30007: 購入の有効化でエラーが発生しました。",
+					"-30008":"メッセージ30008: 復元制限を越えています。",                    "-44443":"エラ 44443: Androidマーケットにログインできませんでした。あなたがAndroidマーケットでアクティブなアカウントを持っていることを確認してください。",                                        "-44444":"エラ 44444: App Storeマーケットにログインできませんでした。あなたがApp Storeマーケットでアクティブなアカウントを持っていることを確認してください。"                    
+				}
+			]
+		},
+		{
+			"zh":
+			[
+				{
+					"-1111":"要存取你的资料，关闭飞行模式或使用Wi-Fi",
+					"-2222":"要存取你的资料，关闭飞行模式或使用Wi-Fi",
+					"-3333":"信息 3333：购买取消。",
+					"-4444":"错误代码 4444：购买服务器错误。请稍候再试。",
+					"-5555":"信息 5555：恢复取消。",										"-5556":"信息 5556:下载取消。",
+					"-6666":"错误代码 6666：恢复被中断。请重试。",
+					"-8888":"错误代码 8888：没有足够的空间。请释放一些空间再试。",
+					"-10001":"错误代码 10001：没有找到主要项目。",
+					"-10002":"错误代码 10002：无法存取档案。",
+					"-10003":"错误代码 10003：权限不足。",
+					"-10004":"错误代码 10004：权限不足。",
+					"-10005":"信息 10005：要存取游戏储存，请将应用程序更新到最新版本。",
+					"-10006":"错误代码 10006：无法存取项目。",
+					"-10007":"错误代码 10007：产品不支援此语言。",                                        "-13002":"错误代码 13002：糟糕！有些不对劲 。。。发生了一个意外错误。",
+					"-21002":"错误代码 21002：无法存取档案。",
+					"-21008":"错误代码 21008：无法存取档案。",
+					"-30001":"错误代码 30001：无法存取档案。",
+					"-30002":"错误代码 30002：无法存取项目。",
+					"-30003":"错误代码 30003：验证收据错误。",
+					"-30004":"错误代码 30004：验证购买错误。",
+					"-30005":"错误代码 30005：超过限制下载次数。",
+					"-30006":"错误代码 30006：拒绝存取。",
+					"-30007":"错误代码 30007：验证购买错误。",
+					"-30008":"信息 30008：超过限制恢复次数。",                    "-44443":"错误代码 44443: 在Google Play无法登录。请确保你有一个在Google Play的活跃帐户。",                                        "-44444":"错误代码 44444: 在App Store无法登录。请确保你有一个在App Store的活跃帐户。"
+				}
+			]
+		},
+		{
+			"ko":
+			[
+				{
+					"-1111":"데이터에 접근하려면 에어플레인 모드를 끄거나 Wi-Fi를 사용하십시오.",
+					"-2222":"데이터에 접근하려면 에어플레인 모드를 끄거나 Wi-Fi를 사용하십시오.",
+					"-3333":"메시지 3333: 구입이 취소되었습니다.",
+					"-4444":"오류 4444: 구매 서버 오류. 나중에 다시 시도해 주십시오.",
+					"-5555":"메시지 5555: 복원을 취소했습니다.",										"-5556":"메시지 5556: 취소 다운로드.",
+					"-6666":"오류 6666: 복원이 중단되었습니다. 다시 시도해 주십시오.",
+					"-8888":"오류 8888: 공간이 부족합니다. 여유 공간 확보 후 다시 시도해 주십시오.",
+					"-10001":"오류 10001: 주 아이템을 찾을 수 없습니다.",
+					"-10002":"오류 10002: 프로필에 접속할 수 없습니다.",
+					"-10003":"오류 10003: 권한이 부족합니다.",
+					"-10004":"오류 10004: 권한이 부족합니다.",
+					"-10005":"메시지 10005: 게임 내 상점에 접속하려면 응용 프로그램을 최신 버전으로 업그레이드해주십시오.",
+					"-10006":"오류 10006: 아이템에 접속할 수 없습니다.",
+					"-10007":"오류 10007: 이 상품은 해당 언어를 지원하지 않습니다.",                                        "-13002":"오류 13002: 이런! 뭔가가 잘못되었습니다…예상하지 못한 오류가 발생했습니다.",
+					"-21002":"오류 21002: 프로필에 접속할 수 없습니다.",
+					"-21008":"오류 21008: 프로필에 접속할 수 없습니다.",
+					"-30001":"오류 30001: 프로필에 접속할 수 없습니다.",
+					"-30002":"오류 30002: 프로필에 접속할 수 없습니다.",
+					"-30003":"오류 30003: 영수증 인증 중 오류가 발생했습니다.",
+					"-30004":"오류 30004: 구매 인증 중 오류가 발생했습니다.",
+					"-30005":"메시지 30005: 다운로드 제한 횟수를 넘었습니다.",
+					"-30006":"오류 30006: 접속이 거부되었습니다.",
+					"-30007":"오류 30007: 구매 인증 중 오류가 발생했습니다.",
+					"-30008":"메시지 30008: 복원 제한 횟수를 초과했습니다.",                    "-44443":"오류 44443: Android 마켓에 로그인할 수 없습니다. 당신은 Android 마켓에 활성화된 계정을 가지고 있는지 확인하십시오.",
+                    "-44444":"오류 44444: App Store 마켓에 로그인할 수 없습니다. 당신은 App Store 마켓에 활성화된 계정을 가지고 있는지 확인하십시오."
+				}
+			]
+		},		{			"nl":			[				{                    "-1111":"Algemene fout. Probeer het later nog eens.",                    "-2222":"Om toegang tot je gegevens te krijgen, deactiveer je de vliegtuigmodus of gebruik je Wi-Fi",                    "-3333":"Melding 3333: Aankoop geannuleerd.",                    "-4444":"Fout 4444: Serverfout tijdens aankoop. Probeer het later nog eens.",                    "-5555":"Melding 5555: Herstel geannuleerd.",                    "-6666":"Fout 6666: Herstel onderbroken. Probeer het nog eens.",                    "-8888":"Fout 8888: Onvoldoende ruimte.  Maak ruimte vrij en probeer het opnieuw.",                    "-10001":"Fout 10001: Kan meesterartikel niet vinden.",                    "-10002":"Fout 10002: Kan geen toegang krijgen tot profiel.",                    "-10003":"Fout 10003: Onvoldoende rechten.",                    "-10004":"Fout 10004: Onvoldoende rechten.",                    "-10005":"Melding 10005: Om toegang te krijgen tot de in-game store, upgrade je naar de nieuwste versie van deze toepassing.",                    "-10006":"Fout 10006: Kan geen toegang krijgen tot artikel.",                    "-10007":"Fout 10007: Taal wordt niet ondersteund voor dit product.",                    "-21002":"Fout 21002: Kan geen toegang krijgen tot profiel.",                    "-21008":"Fout 21008: Kan geen toegang krijgen tot profiel.",                    "-30001":"Fout 30001: Kan geen toegang krijgen tot profiel.",                    "-30002":"Fout 30002: Kan geen toegang krijgen tot artikel.",                    "-30003":"Fout 30003: Fout tijdens valideren ontvangst.",                    "-30004":"Fout 30004: Fout tijdens valideren aankoop.",                    "-30005":"Melding 30005: Downloadlimiet overschreden.",                    "-30006":"Fout 30006: Toegang geweigerd.",                    "-30007":"Fout 30007: Fout tijdens valideren aankoop.",                    "-30008":"Melding 30008: Herstellimiet overschreden.",                                        "-44443":"Error 44443: Could not log in Google Play. Please make sure that you have an active account on Google Play.",                    "-44444":"Error 44444: Could not log in App Store. Please make sure that you have an active account on App Store."				}			]		},		{			"pt":			[				{                      "-1111":"Erro Geral. Tente novamente mais tarde.",                      "-2222":"Para acessar seus dados, desative o modo avião ou use o Wi-Fi",                      "-3333":"Mensagem 3333: Compra cancelada.",                      "-4444":"Erro 4444: Erro no servidor de compras. Tente novamente mais tarde.",                      "-5555":"Mensagem 5555: Restauração cancelada.",                      "-6666":"Erro 6666: Restauração interrompida. Tente novamente.",                      "-8888":"Erro 8888: Não há espaço suficiente.  Libere espaço em disco e tente novamente.",                      "-10001":"Erro 10001: Item principal não encontrado.",                      "-10002":"Erro 10002: Não foi possível acessar o perfil.",                      "-10003":"Erro 10003: Privilégios insuficientes.",                      "-10004":"Erro 10004: Privilégios insuficientes.",                      "-10005":"Mensagem 10005: Para acessar a loja do jogo, atualize para a versão mais recente deste aplicativo.",                      "-10006":"Erro 10006: Não foi possível acessar o item.",                      "-10007":"Erro 10007: Idioma não suportado para este produto.–",                      "-21002":"Erro 21002: Não foi possível acessar o perfil.",                      "-21008":"Erro 21008: Não foi possível acessar o perfil.",                      "-30001":"Erro 30001: Não foi possível acessar o perfil.",                      "-30002":"Erro 30002: Não foi possível acessar o item.",                      "-30003":"Erro 30003: Erro na validação do recibo.",                      "-30004":"Erro 30004: Erro na validação da compra.",                      "-30005":"Mensagem 30005: Limite de download excedido.",                      "-30006":"Erro 30006: Acesso negado.",                      "-30007":"Erro 30007: Erro na validação da compra.",                      "-30008":"Mensagem 30008: Limite de restaurações excedido.",                                        "-44443":"Error 44443: Could not log in Google Play. Please make sure that you have an active account on Google Play.",                    "-44444":"Error 44444: Could not log in App Store. Please make sure that you have an active account on App Store."				}			]		},		{			"ru":			[				{                    "-1111":"Критическая ошибка. Пожалуйста, повторите попытку позже.",                    "-2222":"Для доступа к данным отключите режим \"в самолете\" или используйте Wi-Fi.",                    "-3333":"Сообщение 3333. Сделка отменена.",                    "-4444":"Ошибка 4444. Ошибка сервера покупателя. Пожалуйста, повторите попытку позже.",                    "-5555":"Сообщение 5555. Восстановление отменено.",                    "-6666":"Ошибка 6666. Восстановление прервано. Пожалуйста, повторите попытку.",                    "-8888":"Ошибка 8888. Недостаточно места. Пожалуйста, освободите место и повторите попытку.",                    "-10001":"Ошибка 10001. Не найден главный объект.",                    "-10002":"Ошибка 10002. Ошибка доступа к профилю.",                    "-10003":"Ошибка 10003. Недостаточные полномочия.",                    "-10004":"Ошибка 10004. Недостаточные полномочия.",                    "-10005":"Сообщение 10005. Для доступа к игровому магазину, пожалуйста, обновите приложение до последней версии.",                    "-10006":"Ошибка 10006. Ошибка доступа к объекту.",                    "-10007":"Ошибка 10007. Данный язык не поддерживается для этого продукта.",                    "-21002":"Ошибка 21002. Ошибка доступа к профилю.",                    "-21008":"Ошибка 21008. Ошибка доступа к профилю.",                    "-30001":"Ошибка 30001. Ошибка доступа к профилю.",                    "-30002":"Ошибка 30002.Ошибка доступа к объекту.",                    "-30003":"Ошибка 30003. Ошибка подтверждения квитанции.",                    "-30004":"Ошибка 30004. Ошибка подтверждения сделки.",                    "-30005":"Сообщение 30005. Превышен лимит загрузок.",                    "-30006":"Ошибка 30006. Отказано в доступе.",                    "-30007":"Ошибка 30007. Ошибка подтверждения сделки.",                    "-30008":"Сообщение 30008. Превышен лимит восстановлений.",                                        "-44443":"Ошибка 44443: Ошибка доступа в Google Play. Убедитесь что у вас активирован аккаунт в Google Play на устройстве.",                    "-44444":"Ошибка 44444: CОшибка доступа в ITunes. Убедитесь что у вас активирован аккаунт в App Store на устройстве."				}			]		}
+	]
+}

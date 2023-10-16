@@ -1,0 +1,53 @@
+POBIERZ I GRAJ
+Do uruchomienia %% wymaga dodatkowo okolo %% MB dodatkowych danych. Wybierz polecenie "Pobierz", aby rozpoczac operacje. Czas pobierania moze sie zmieniac w zaleznosci od sieci i lokalizacji. Zalecane jest polaczenie Wi-Fi.
+OK
+NIEWYSTARCZAJACA PAMIEC 
+Twoja gra wymaga %% MB. Wprowadz lub zwolnij miejsce na swojej karcie pamieci SD, aby rozpoczac pobieranie.
+POBIERZ
+ZAKONCZ
+NIE ZNALEZIONO POLACZENIA WI-FI
+Wi-Fi jest zalecane w celu szybszego pobierania. Wybierz "WI-FI", aby uruchomic Wi-Fi i kontynuowac.
+3G NIEDOSTEPNE
+Siec 3G jest obecnie niedostepna. Polaczenie Wi-Fi jest zalecane w celu szybszego pobierania. Wybierz opcje "WI-FI", aby skonfigurowac polaczenie Wi-Fi i kontynuowac pobieranie lub spróbuj ponownie, gdy siec bedzie dostepna.
+POBIERANIE NIE POWIODLO SIE
+Zapisano postepy procesu. Polacz sie ponownie, a nastepnie jeszcze raz uruchom aplikacje, aby kontynuowac pobieranie. (%%)
+POBIERANIE PRZERWANE
+PONÓW PRÓBE
+Spróbuj ponownie za [x, x-1...] sekund.
+WI-FI
+TAK
+NIE
+POBIERANIE
+Trwa pobieranie...
+AKTUALIZACJE
+Sprawdzanie aktualizacji...
+3G
+Czy na pewno chcesz pobierac przez 3G? Pobieranie moze potrwac do 2 godzin i jest usluga platna.
+AKTUALIZACJE DOSTEPNE
+%% wymaga aktualizacji %% MB. Zaznacz "Pobierz", aby rozpoczac.
+URZADZENIE NIEOBSLUGIWANE
+W czasie pobierania gry wystapil blad. Odwiedz strone www.eamobile.com/countrygate, aby wybrac swój kraj, a nastepnie kliknij link obslugi klienta.
+Nacisnij przycisk BACK, aby skonfigurowac Wi-Fi.
+Nacisnij przycisk BACK, aby korzystac z 3G.
+Zaznacz "3G", aby korzystac z 3G.
+Do pobrania dodatkowej zawartosci wymagane jest polaczenie bezprzewodowe Wi-Fi. Prosimy wlaczyc Wi-Fi i spróbowac ponownie.
+BLAD SERWERA
+Wystapil blad serwera. Prosimy odwiedzic www.eamobile.com/countrygate i wybrac swój kraj, aby skontaktowac sie z pomoca techniczna. (%%)
+sila sygnalu
+%1 MB z %2 MB    %3 kb/s
+SPRAWDZANIE AKTUALIZACJI
+Trwa sprawdzanie dostepnosci tresci, czekaj na nawiazanie polaczenia z serwerem...
+POLACZ z 3G
+wylaczono
+Czy chcesz zatrzymac pobieranie tresci i wyjsc?
+ZAWARTOSC DODATKOWA JEST NIEAKTUALNA
+Zawartosc odnaleziona na urzadzeniu jest niekompatybilna z ta wersja gry. Przeprowadz aktualizacje zawartosci dodatkowej i spróbuj ponownie.
+Zauwaz, ze nie da sie uruchomic gry jesli nie pobierzesz aktualizacji.
+Usuwanie starej zawartosci...
+Utracono polaczenie przez Wifi. Pobieranie zatrzymane. Kontynuowac pobieranie przez polaczenie transmisji danych?
+Tylko teraz
+Zawsze
+Anuluj
+Uruchomienie %% wymaga pobrania okolo %% MB danych oraz minimum %% MB wolnego miejsca na Twoim urzadzeniu lub karcie SD. Aby rozpoczac, wybierz opcje „Pobierz”. Czas pobierania zalezy od polaczenia i lokalizacji. Zalecamy polaczenia Wi-Fi.
+Gra wymaga %% MB wolnego miejsca, a w Twoim urzadzeniu dostepne jest jedynie %% MB. Zwolnij miejsce, aby rozpoczac pobieranie.
+Debug Test Title

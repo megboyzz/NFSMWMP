@@ -1,0 +1,53 @@
+TÉLÉCHARGER ET JOUER
+%% nécessite environ %% Mo de contenu supplémentaire pour s'exécuter. Sélectionnez "Télécharger" pour commencer. La durée de téléchargement peut varier en fonction du réseau et de l'emplacement. Une connexion Wi-Fi est recommandée.
+OK
+MÉMOIRE INSUFFISANTE
+%% Mo nécessaire(s) pour votre jeu. Insérez ou libérez de l'espace sur votre carte mémoire SD pour démarrer le téléchargement.
+TÉLÉCHARGER
+QUITTER
+CONNEXION WI-FI NON DISPONIBLE
+Une connexion Wi-Fi est fortement recommandée pour un téléchargement plus rapide. Choisissez « WI-FI » pour configurer l'option Wi-Fi, puis continuez.
+3G NON DISPONIBLE
+Le réseau 3G n'est actuellement pas disponible. Une connexion Wi-Fi est fortement recommandée pour un téléchargement plus rapide. Choisissez « WI-FI » pour configurer l'option Wi-Fi et continuer ou essayez à nouveau lorsque le service est disponible.
+ÉCHEC DU TÉLÉCHARGEMENT
+La progression a été sauvegardée. Reconnectez-vous, puis redémarrez l'application pour poursuivre le téléchargement. (%%)
+TÉLÉCHARGEMENT INTERROMPU
+RÉESSAYER
+Réessayez dans [x, x-1...] secondes.
+WI-FI
+OUI
+NON
+TÉLÉCHARGEMENT
+Téléchargement en cours...
+MISES À JOUR
+Vérification des mises à jour...
+3G
+Voulez-vous vraiment télécharger en utilisant une connexion 3G ? Les téléchargements peuvent durer jusqu'à 2 heures, et votre opérateur peut vous faire payer des coûts de connexion supplémentaires.
+MISES À JOUR DISPONIBLES
+%% nécessite une mise à jour de %% Mo. Cliquez sur "Télécharger" pour commencer.
+DISPOSITIF NON PRIS EN CHARGE
+Une erreur s'est produite au cours du téléchargement du jeu. Rendez-vous sur www.eamobile.com/countrygate pour choisir votre pays et cliquez sur le lien d'assistance clientèle.
+Appuyez sur la touche RETOUR pour configurer le mode Wi-Fi.
+Appuyez sur la touche RETOUR pour utiliser la fonction 3G.
+Cliquez sur « 3G » pour utiliser la fonction 3G.
+Une connexion Wi-Fi est nécessaire pour télécharger du contenu supplémentaire. Veuillez activer votre connexion Wi-Fi et réessayer.
+ERREUR DU SERVEUR
+Une erreur du serveur est survenue. Rendez-vous sur www.eamobile.com/countrygate pour indiquer votre pays, puis cliquez sur le lien vers notre service consommateurs. (%%)
+puissance du signal
+%1 Mo sur %2 Mo    %3 kb/s
+VÉRIFICATION MISE À JOUR
+Recherche de contenu en cours, veuillez patienter pendant l'entrée en contact avec le serveur...
+CONNEXION 3G
+désactivé
+Voulez-vous vraiment interrompre le télechargement et quitter?
+CONTENU ADDITIONNEL OBSOLÈTE
+Le contenu détecté sur cet appareil n'est pas compatible avec la version du jeu. Veuillez mettre à jour le contenu additionnel et réessayer.
+Remarque : vous ne pourrez pas lancer le jeu avant d'avoir téléchargé la mise à jour.
+Suppression de l'ancien contenu...
+Connexion WiFi perdue, téléchargement en pause. Poursuivre le téléchargement via la connexion des données ?
+Cette fois seulement
+Toujours
+Annuler
+Vous devez avoir environ %% Mo d'espace livre sur votre appareil ou votre carte SD pour télécharger %% et %% Mo pour l'exécuter. Sélectionnez "Télécharger" pour lancer le téléchargement. La durée du téléchargement peut varier en fonction du réseau et du lieu. Une connexion Wi-Fi est recommandée.
+Ce jeu nécessite %% Mo, mais vous ne disposez que de %% Mo sur votre appareil. Libérez de l'espace pour commencer le téléchargement.
+Debug Test Title

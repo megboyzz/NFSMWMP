@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_list">
+
+        <item>@string/synchronize_sys_lang_title</item>
+        <item>@string/cn_title</item>
+        <item>@string/nl_title</item>
+        <item>@string/en_title</item>
+        <item>@string/fr_title</item>
+        <item>@string/de_title</item>
+        <item>@string/it_title</item>
+        <item>@string/jp_title</item>
+        <item>@string/kr_title</item>
+        <item>@string/br_title</item>
+        <item>@string/ru_title</item>
+        <item>@string/es_title</item>
+
+    </string-array>
+
+    <string-array name="language_list_ids">
+
+        <item>sys</item>
+        <item>cn</item>
+        <item>nl</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>kr</item>
+        <item>br</item>
+        <item>ru</item>
+        <item>es</item>
+
+    </string-array>
+
+</resources>

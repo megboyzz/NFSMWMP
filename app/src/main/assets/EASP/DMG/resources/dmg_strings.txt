@@ -1,0 +1,172 @@
+{
+	"strings":
+	[
+		{
+			"en":
+			[
+				{
+					"MoreStr":"More",
+					"GamesStr":"Games",
+					"CatHotstr":"What's Hot",
+					"CatYouStr":"Games For You",
+					"CatNewStr":"New",
+					"CatSoonStr":"Coming Soon",
+					"CatAllStr":"All Games",
+					"BuyNowStr":"BUY NOW",
+					"AlertTitleStr":"",
+					"AlertMsgStr":"To access your data, deactivate flight mode or use Wi-Fi",
+					"AlertButStr":"OK",
+					"Cancel":"CANCEL",
+					"ServerErrMsg":"This service is temporarily unavailable.",
+					"StaticPage":"dmg_staticpage_en.html",										"Cancel":"Cancel",										"Loading":"Loading ..."
+				}
+			]
+		},
+		{
+			"fr":
+			[
+				{
+					"MoreStr":"Plus de Jeux",
+					"GamesStr":"",
+					"CatHotstr":"Nouveautés",
+					"CatYouStr":"Jeux pour vous",
+					"CatNewStr":"Nouveau",
+					"CatSoonStr":"Bientôt disponible(s)",
+					"CatAllStr":"Tous les jeux",
+					"BuyNowStr":"ACHETER",
+					"AlertTitleStr":"Erreur réseau",
+					"AlertMsgStr":"Désactivez le mode Avion ou utilisez Wi-Fi pour accéder à vos données",
+					"AlertButStr":"OK",
+					"Cancel":"ANNULER",
+					"ServerErrMsg":"Ce service est momentanément indisponible.",
+					"StaticPage":"dmg_staticpage_fr.html",										"Loading":"Chargement ...",										"Cancel":"Annuler"
+				}
+			]
+		},
+		{
+			"it":
+			[
+				{
+					"MoreStr":"Altri Giochi",
+					"GamesStr":"",
+					"CatHotstr":"Ultimissime",
+					"CatYouStr":"Giochi per te",
+					"CatNewStr":"Novità",
+					"CatSoonStr":"Prossimamente",
+					"CatAllStr":"Tutti i giochi",
+					"BuyNowStr":"COMPRA ORA",
+					"AlertTitleStr":"Errore di rete",
+					"AlertMsgStr":"Disattiva la modalità di uso in aereo o usa il Wi-Fi per accedere ai dati",
+					"AlertButStr":"OK",
+					"Cancel":"ANNULLA",
+					"ServerErrMsg":"Il servizio non è momentaneamente disponibile.",
+					"StaticPage":"dmg_staticpage_it.html",										"Loading":"Caricamento ...",										"Cancel":"Annulla"
+				}
+			]
+		},
+		{
+			"de":
+			[
+				{
+					"MoreStr":"Mehr",
+					"GamesStr":"-Spiele",
+					"CatHotstr":"Angesagt",
+					"CatYouStr":"Spiele für dich",
+					"CatNewStr":"Neues",
+					"CatSoonStr":"Bald erhältlich",
+					"CatAllStr":"Alle Spiele",
+					"BuyNowStr":"JETZT KAUFEN",
+					"AlertTitleStr":"Netzwerkfehler",
+					"AlertMsgStr":"Flugmodus deaktivieren oder Wi-Fi für Datenzugriff verwenden",
+					"AlertButStr":"OK",
+					"Cancel":"ABBRECHEN",
+					"ServerErrMsg":"Dieser Dienst ist vorübergehend nicht verfügbar.",
+					"StaticPage":"dmg_staticpage_de.html",					"Loading":"Geladen ...",					"Cancel":"Abbrechen"
+				}
+			]
+		},
+		{
+			"es":
+			[
+				{
+					"MoreStr":"Más Juegos de",
+					"GamesStr":"",
+					"CatHotstr":"Novedades",
+					"CatYouStr":"Juegos para ti",
+					"CatNewStr":"Nuevo",
+					"CatSoonStr":"Próximamente",
+					"CatAllStr":"Todos los juegos",
+					"BuyNowStr":"COMPRAR AHORA",
+					"AlertTitleStr":"Error de red",
+					"AlertMsgStr":"Para acceder a tus datos, desactiva el modo Avión o usa Wi-Fi",
+					"AlertButStr":"OK",
+					"Cancel":"CANCELAR",
+					"ServerErrMsg":"Este servicio está  temporalmente indisponible.",
+					"StaticPage":"dmg_staticpage_es.html",										"Loading":"Cargando ...",										"Cancel":"Cancelar"
+				}
+			]
+		},
+		{
+			"ja":
+			[
+				{
+					"MoreStr":"他の",
+					"GamesStr":"ゲーム",
+					"CatHotstr":"ホットな\nアプリ",
+					"CatYouStr":"お勧め\nゲーム",
+					"CatNewStr":"新作",
+					"CatSoonStr":"近日配信",
+					"CatAllStr":"全ての\nゲーム",
+					"BuyNowStr":"今すぐ購入",
+					"AlertTitleStr":"ネットワークエラー",
+					"AlertMsgStr":"データにアクセスするには、機内モードをオフにするか、Wi-Fiを使用してください",
+					"AlertButStr":"OK",
+					"Cancel":"キャンセル",
+					"ServerErrMsg":"現在このサービスは使用できません.",
+					"StaticPage":"dmg_staticpage_ja.html",										"Loading":"ロード ...",										"Cancel":"キャンセル"
+				}
+			]
+		},
+		{
+			"zh":
+			[
+				{
+					"MoreStr":"更多",
+					"GamesStr":"游戏",
+					"CatHotstr":"热门",
+					"CatYouStr":"推荐",
+					"CatNewStr":"最新",
+					"CatSoonStr":"即将推出",
+					"CatAllStr":"所有游戏",
+					"BuyNowStr":"马上购买",
+					"AlertTitleStr":"网络错误",
+					"AlertMsgStr":"要存取你的资料，关闭飞行模式或使用Wi-Fi",
+					"AlertButStr":"好",
+					"Cancel":"取消",
+					"ServerErrMsg":"服务器暂时无法使用。",
+					"StaticPage":"dmg_staticpage_zh.html",										"Loading":"載入中 ...",										"Cancel":"取消"
+				}
+			]
+		},
+		{
+			"ko":
+			[
+				{
+					"MoreStr":"더 보기",
+					"GamesStr":"게임",
+					"CatHotstr":"따끈한 소식",
+					"CatYouStr":"당신을 위한 게임",
+					"CatNewStr":"신규",
+					"CatSoonStr":"곧 출시",
+					"CatAllStr":"모든 게임",
+					"BuyNowStr":"즉시 구매",
+					"AlertTitleStr":"네트워크 오류",
+					"AlertMsgStr":"데이터에 접근하려면 에어플레인 모드를 끄거나 Wi-Fi를 사용하십시오.",
+					"AlertButStr":"OK",
+					"Cancel":"취소",
+					"ServerErrMsg":"이 기능은 일시적으로 이용이 불가능합니다.",
+					"StaticPage":"dmg_staticpage_ko.html",										"Loading":"로드 ...",										"Cancel":"취소"
+				}
+			]
+		},	    {	    "ru":            [                    {                      "MoreStr":"Еще",                      "GamesStr":"Игры",                      "CatHotstr":"Бестселлеры",                      "CatYouStr":"Игры для вас",                      "CatNewStr":"Новые",                      "CatSoonStr":"Скоро...",                      "CatAllStr":"Все игры",                      "BuyNowStr":"КУПИТЬ",                      "AlertTitleStr":":",                      "AlertMsgStr":"Для доступа к данным отключите режим \"в самолете\" или используйте Wi-Fi.",                      "AlertButStr":"OK",                      "Cancel":"ОТМЕНА",                      "ServerErrMsg":"Временно недоступно.",                      "NoContentMsg":"Отсутствует доступный контент.",                      "StaticPage":"dmg_staticpage_en.html"                      		            }             ]        },	    {	    "nl":            [                    {                      "MoreStr":"Meer",                      "GamesStr":"Games",                      "CatHotstr":"Wat is hot",                      "CatYouStr":"Games voor jou",                      "CatNewStr":"Nieuw",                      "CatSoonStr":"Binnenkort verwacht",                      "CatAllStr":"Alle games",                      "BuyNowStr":"KOOP NU",                      "AlertTitleStr":":",                      "AlertMsgStr":"Om toegang tot je gegevens te krijgen, deactiveer je de vliegtuigmodus of gebruik je Wi-Fi",                      "AlertButStr":"OK",                      "Cancel":"ANNULEREN",                      "ServerErrMsg":"Deze dienst is tijdelijk niet beschikbaar.",                      "NoContentMsg":"Er is geen content beschikbaar.",                      "StaticPage":"dmg_staticpage_en.html"		            }             ]        },	    {	    "pt":            [                    {                      "MoreStr":"Mais",                      "GamesStr":"Jogos",                      "CatHotstr":"Populares",                      "CatYouStr":"Jogos para você",                      "CatNewStr":"Nova",                      "CatSoonStr":"EM BREVE",                      "CatAllStr":"Todos os Jogos",                      "BuyNowStr":"COMPRAR AGORA",                      "AlertTitleStr":":",                      "AlertMsgStr":"Para acessar seus dados, desative o modo avião ou use o Wi-Fi",                      "AlertButStr":"OK",                      "Cancel":"CANCELAR",                      "ServerErrMsg":"No momento, esse serviço está indisponível.",                      "NoContentMsg":"Não há conteúdo disponível.",                      "StaticPage":"dmg_staticpage_en.html"		            }             ]        }                	]
+}

@@ -1,0 +1,53 @@
+DOWNLOAD EN SPELEN
+%% werkt alleen in combinatie met aanvullend materiaal. Zorg dat je minimaal %% MB aan vrije ruimte op je SD-kaart hebt staan. Kies 'Downloaden' om te beginnen. De duur van het downloaden is gebaseerd op het netwerk en de locatie. We raden je aan om Wi-Fi te gebruiken.
+OkÃ©
+ONVOLDOENDE GEHEUGEN
+Je hebt %% MB nodig voor de game. Maak wat ruimte vrij op je SD-kaart om het downloaden te beginnen.
+DOWNLOADEN
+SLUITEN
+WI-FI VERBINDING NIET GEVONDEN
+We raden je aan om Wi-Fi te gebruiken om het downloaden te versnellen. Kies WI-FI om een draadloze verbinding in te stellen en verder te gaan.
+3G NIET BESCHIKBAAR
+3G-netwerk momenteel niet beschikbaar. We raden je aan om Wi-Fi te gebruiken om het downloaden te versnellen. Kies WI-FI om een draadloze verbinding in te stellen en verder te gaan, of probeer het opnieuw als de service beschikbaar is.
+DOWNLOADEN MISLUKT
+Voortgang is opgeslagen. Maak opnieuw verbinding om het downloaden te voltooien. (%%)
+DOWNLOAD ONDERBROKEN
+OPNIEUW PROBEREN
+Probeer opnieuw over [x, x-1...] seconden.
+WI-FI
+JA
+NEE
+BEZIG MET DOWNLOADEN
+Download wordt uitgevoerd...
+UPDATES
+Zoekt naar updates...
+3G
+Weet je zeker dat je het downloaden via 3G wilt annuleren? Het downloaden kan tot 2 uur in beslag nemen en er kunnen providerkosten van toepassing zijn.
+UPDATES BESCHIKBAAR
+%% vereist een update van %% MB. Kies 'Downloaden' om te beginnen.
+NIET-ONDERSTEUND APPARAAT
+Er is een fout opgetreden tijdens het downloaden van je game. Ga naar www.eamobile.com/countrygate om je land te kiezen en klik op de link voor klantenservice.
+Druk op de toets TERUG om Wi-Fi te configureren.
+Druk op de toets TERUG om 3G te gebruiken.
+Selecteer '3G' om 3G te gebruiken.
+Je hebt een draadloze verbinding nodig om aanvullend materiaal te downloaden. Schakel Wi-Fi opnieuw in en probeer het nogmaals.
+FOUT MET DE SERVER
+Er heeft zich een fout met de server voorgedaan. Ga naar www.eamobile.com/countrygate om je land te kiezen en klik op de link voor klantenservice. (%%)
+signaalsterkte
+%1 MB van %2 MB    %3 kb/s
+UPDATECONTROLE
+Zoekt naar materiaal, momentje geduld terwijl er contact wordt gemaakt met de server...
+3G VERBINDING
+uit 
+Wil je het downloaden stoppen en afsluiten?
+AANVULLEND MATERIAAL VEROUDERD
+Het materiaal dat in het apparaat werd gevonden is niet compatibel met de gameversie. Update het aanvullende materiaal en probeer het opnieuw.
+Je kunt de game niet lanceren als je de update niet downloadt.
+Oud materiaal wordt verwijderd...
+Wifi-verbinding verbroken, downloaden gepauzeerd. Doorgaan via mobiele dataverbinding?
+Alleen deze keer
+Altijd
+Annuleren
+De grootte van het downloadbestand voor %% is ongeveer %% MB en er is ongeveer %% MB vrije ruimte op een SD-kaart vereist. Selecteer 'Downloaden' om te beginnen. Downloadtijden kunnen variëren en zijn afhankelijk van het netwerk en de locatie. Wifi-verbinding aanbevolen.
+%% MB is vereist voor je spel, maar er is slechts %% MB geheugen beschikbaar op jouw toestel. Maak geheugen vrij en start met de download.
+Debug testgame

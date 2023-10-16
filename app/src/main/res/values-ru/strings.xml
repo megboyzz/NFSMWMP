@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFS Most Wanted</string>
+    <string name="app_full_name">NFS Most Wanted</string>
+    <string name="icon_name">@drawable/icon</string>
+    <string name="empty" />
+    <string name="nimble_configuration">live</string>
+    <string name="app_id">301771293238871</string>
+    <string name="notification_download_complete">Загрузка закончена</string>
+    <string name="notification_download_failed">Загрузка не успешна</string>
+    <string name="state_unknown">Запуск...</string>
+    <string name="state_idle">Ожидание начала загрузки</string>
+    <string name="state_fetching_url">Поиск ресурсов для загрузки</string>
+    <string name="state_connecting">Подключение к серверу загрузки</string>
+    <string name="state_downloading">Загрузка ресурсов</string>
+    <string name="state_completed">Загрузка закончена</string>
+    <string name="state_paused_network_unavailable">Загрузка прекращена, т.к. сеть не доступна </string>
+    <string name="state_paused_network_setup_failure">Загрузка приостановлена. Попробуйте в браузере</string>
+    <string name="state_paused_by_request">Загрузка приостановлена</string>
+    <string name="state_paused_wifi_unavailable">Загрузка приостановлена потому что wifi не доступен</string>
+    <string name="state_paused_wifi_disabled">Загрузка приостановлена потому что wifi выключен</string>
+    <string name="state_paused_roaming">Загрузка приостановлена потому что вы в роуминге</string>
+    <string name="state_paused_sdcard_unavailable">Загрузка приостановлена потому что внешнее хранилище недоступно</string>
+    <string name="state_failed_unlicensed">Загрузка не завершена потому что вы не купили это приложение)</string>
+    <string name="state_failed_fetching_url">Загрузка не завершена потому что ресурс для скачивания не найден</string>
+    <string name="state_failed_sdcard_full">Загрузка не завершена потому что внешнее хранилище заполнено полностью</string>
+    <string name="state_failed_cancelled">Загрузка отменена</string>
+    <string name="state_failed">Загрузка не завершена</string>
+    <string name="kilobytes_per_second">%1$s Кб/с</string>
+    <string name="time_remaining">Оставшееся время: %1$с</string>
+    <string name="time_remaining_notification">%1$с прошло</string>
+
+    <!-- Блок строк для дев меню -->
+    <string name="dev_menu_title">NFSMW DevMenu v%3s</string>
+
+    <string name="cn_title">Китайский</string>
+    <string name="nl_title">Нидерландский</string>
+    <string name="en_title">Английский</string>
+    <string name="fr_title">Французский</string>
+    <string name="de_title">Немецкий</string>
+    <string name="it_title">Итальянский</string>
+    <string name="jp_title">Японский</string>
+    <string name="kr_title">Корейский</string>
+    <string name="br_title">Португальский</string>
+    <string name="ru_title">Русский</string>
+    <string name="es_title">Испанский</string>
+
+    <string name="external_store_title">Кеш игры</string>
+    <string name="internal_store_title">Внутренние данные</string>
+
+    <string name="run_game_title">Запустить игру!</string>
+    <string name="settings_title">Настройки</string>
+    <string name="delete_game_data_title">Удалить данные</string>
+    
+    <string name="synchronize_sys_lang_title">Язык системы</string>
+    <string name="choose_lang_title">Язык игры</string>
+
+    <string name="choose_save_file_title">Выбрать nfstr_save.sb файл сохраниния</string>
+    <string name="choose_svmw_file_title">Выбрать *.svmw файл сохраниния</string>
+    <string name="create_svmw_file_title">Создать *.svmw файл сохраниния</string>
+    <string name="switch_off_devmenu_title">Выключить DevMenu</string>
+
+    <string name="ok_title">OK</string>
+    <string name="cancel_title">Отмена</string>
+
+    <string name="saves_title">Сохранения</string>
+    <string name="back_title">Назад</string>
+    <string name="replace_file_title">Заменить</string>
+    <string name="remove_file_title">Удалить</string>
+    <string name="track_file_title">Отслеживать</string>
+    <string name="folder_title">Папка</string>
+    <string name="file_title">Файл</string>
+    <string name="recover_file_title">Восстановить</string>
+    <string name="sure_remove_title">Уверен, что хочешь удалить %s?</string>
+    <string name="file_props_title">Свойства</string>
+    <string name="file_lastmod_title">Последние изменение:</string>
+    <string name="file_size_title">Размер:</string>
+    <string name="hide_file_title">Скрыть/Покзать файл игре</string>
+    <string name="sure_remove_all_data_title">Уверен, что хочешь удалить все внутренние файлы игры?</string>
+    <string name="remove_action_title">Удаление</string>
+    <string name="recover_title">Файлы для востановления</string>
+    <string name="hint_name_svmw">Имя файла svmw</string>
+    <string name="hint_des_svmw">Описание svmw</string>
+    <string name="title_svmw_create_btn">Создать SVMW</string>
+    <string name="title_svmw_where_to_save_btn">Куда положить</string>
+    <string name="toast_strings_must_be_entered">Поля не должны быть пустыми</string>
+    <string name="title_use_cur_save">Использовать текущий nfstr_save.sb?</string>
+    <string name="title_select_save_file">Выбрать nfstr_save.sb</string>
+    <string name="title_date_of_creation">Дата создания</string>
+    <string name="title_load_svmw">Загрузить svmw</string>
+    <string name="msg_devmenu_off">Уверен что хочешь выключить DevMenu? Чтобы его включить нужно будет создать пустой файл c именем DevMenu в корне кэша игры</string>
+
+</resources>

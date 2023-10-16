@@ -1,0 +1,53 @@
+DESCARGAR Y JUGAR
+El %% requiere aproximadamente %% MB de espacio adicional para ser ejecutado. Seleccione "Descargar" para iniciar. El tiempo de descarga puede variar en función de la red y la localización. Se recomienda el uso de conexión Wi-Fi.
+ACEPTAR
+MEMORIA INSUFICIENTE
+%% MB es requerido para la descarga de su juego. Inserte o libere espacio de su tarjeta de memoria SD para iniciar con la descarga.
+DESCARGAR
+SALIR
+CONEXIÓN WI-FI NO ENCONTRADA
+Se recomienda el uso del Wi-Fi para una descarga más rápida. Seleccione "WI-FI" a la configuración de Wi-Fi y continúe.
+3G NO DISPONIBLE
+La red 3G no está disponible en este momento. Se recomienda el uso del Wi-Fi para una descarga más rápida. Seleccione "WI-FI" a la configuración Wi-Fi y continúe o inténtelo nuevamente más tarde cuando el servicio se encuentre disponible.
+FALLO EN LA DESCARGA
+El progreso ha sido guardado. Vuelva a conectarse y reanude la aplicación para continuar con la descarga. (%%)
+DESCARGA INTERRUMPIDA
+REINGRESAR
+Volver a intentar en [x, x-1...] segundos.
+WI-FI
+SÍ
+NO
+DESCARGANDO
+Descarga en progreso...
+ACTUALIZACIONES
+Verificando actualizaciones...
+3G
+¿Está seguro que desea descargar a través de 3G? Las descargas pueden tomar hasta 2 horas y los cargos serán aplicados.
+ACTUALIZACIONES DISPONIBLES
+%% requiere una actualización de %% MB. Seleccione "Descargar" para iniciar.
+DISPOSITIVO SIN SOPORTE
+Ha ocurrido un error al descargar el juego. Por favor, visite www.eamobile.com/countrygate para elegir su país y haga clic en el enlace de atención al cliente.
+Pulse la tecla ATRÁS para la configuración de Wi-Fi.
+Pulse la tecla ATRÁS para el uso de 3G.
+Seleccione "3G" para el uso de 3G.
+Se requiere una conexión Wi-Fi para descargar el contenido adicional. Habilita la conexión y vuelve a intentarlo.
+ERROR DEL SERVIDOR
+Se ha encontrado un error en el Servidor. Por favor visite www.eamobile.com/countrygate para escoger su país y haga clic en el enlace de soporte al cliente. (%%)
+intensidad de señal
+%1 MB de %2 MB    %3 kb/s
+COMPROBACIÓN DE ACTUALIZACIÓN
+Comprobando contenido. Por favor, espera mientras se contacta con el servidor...
+CONEXIÓN 3G
+desactivado
+¿Quieres detener la descarga de contenido y salir?
+CONTENIDO ADICIONAL DESACTUALIZADO
+El contenido que se encuentra en el dispositivo no es compatible con la versión del juego. Actualiza el contenido adicional e inténtalo de nuevo.
+Ten en cuenta que no podrás iniciar el juego si no descargas la actualización.
+Eliminando contenido antiguo...
+Se perdió la conexión inalámbrica, pausando descarga. ¿Quieres continuar la descarga usando la conexión de datos?
+Solo esta vez
+Siempre
+Cancelar
+%% necesita aproximadamente %% MB para poder descargarse y un mínimo de %% MB de espacio libre en tu dispositivo o tarjeta SD para ejecutarse. Selecciona "Descargar" para comenzar. El tiempo de descarga puede variar en función de la red y de la ubicación. Se recomienda utilizar una conexión Wi-Fi.
+Son necesarias %% MB para el juego, pero solo hay %% MB de almacenamiento disponible en el dispositivo. Libera espacio en el dispositivo para comenzar la descarga.
+Debug Test Title

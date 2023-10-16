@@ -1,0 +1,53 @@
+DOWNLOAD AND PLAY
+%% requires approximately %% MB additional content to run. Select "Download" to begin. Download times may vary based on network and location. Wi-Fi connection is recommended.
+OK
+INSUFFICIENT MEMORY
+%% MB is required for your game. Insert or clear space on your SD memory card to begin download.
+DOWNLOAD
+EXIT
+WI-FI CONNECTION NOT FOUND
+Wi-Fi strongly recommended for faster download. Choose "WI-FI" to setup Wi-Fi and continue.
+3G UNAVAILABLE
+3G network currently unavailable. Wi-Fi strongly recommended for faster download. Choose "WI-FI" to setup Wi-Fi and continue or try again when service is available.
+DOWNLOAD FAILED
+Progress has been saved. Reconnect then relaunch app to continue download. (%%)
+DOWNLOAD INTERRUPTED
+RETRY
+Retry in [x, x-1...] seconds.
+WI-FI
+YES
+NO
+DOWNLOADING
+Download in progress...
+UPDATES
+Checking for updates...
+3G
+Are you sure you want to download via 3G? Downloads can take up to 2 hours and carrier charges may apply.
+UPDATES AVAILABLE
+%% requires an update of %% MB. Select "Download" to begin.
+UNSUPPORTED DEVICE
+An error has occurred while downloading your game. Please visit www.eamobile.com/countrygate to choose your country and click the customer support link.
+Press the BACK key to configure Wi-Fi.
+Press the BACK key to use 3G.
+Select "3G" to use 3G.
+Wi-Fi connection is required in order to download additional content. Please enable Wi-Fi and try again.
+SERVER ERROR
+A server error has occurred. Please visit www.eamobile.com/countrygate to choose your country and click the customer support link. (%%)
+signal strength
+%1 MB of %2 MB    %3 kb/s
+UPDATE CHECK
+Checking for content, please wait while contacting server...
+3G CONNECT
+disabled
+Do you want to stop content download and exit?
+ADDITIONAL CONTENT OUT-OF-DATE
+The content found in the device is not compatible with the game version. Please update the additional content and try again.
+Please note that you will not be able to launch the game if you do not download the update.
+Deleting old content...
+Wifi connection lost, pausing download. Continue download over data connection?
+This time only
+Always
+Cancel
+ %% requires approximately %% MB to download and to have a minimum of %% MB of free space on your device or SD card to run. Select "Download" to begin. Download times may vary based on network and location. Wi-Fi connection is recommended.
+%% MB is required for your game, but only %% MB storage is available on your device. Clear space on your device to begin download.
+Debug Test Title

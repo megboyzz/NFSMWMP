@@ -1,0 +1,368 @@
+{
+    "strings":
+    [
+        {
+            "en":
+                [
+                    {
+                        "LoadingItems":"Loading Items ...",
+                        "PurchasingItem":"Purchasing Item ...",
+                        "DownloadingItem":"Downloading Item ...",
+                        "RestoringItems":"Restoring Items ...",
+                        "RestoreNothing":"0 items restored.",
+                        "RestoreNumItems":"Restoring %d of %d items",
+                        "RestoreFinished":"Restoring finished.",
+                        "MyStuff":"My Stuff",
+                        "New":"New",
+                        "More":"More",
+                        "Dismiss":"Dismiss",
+                        "Cancel":"Cancel",
+                        "Close":"Close",
+                        "LowVersionMsg":"To download more great content currently available for your games, please update your itunes software. It's easy:\n1. Connect your device to your computer\n2. Open iTunes\n3. Click “UPDATE”",
+                        "InsufficientSpaceMsg":"You do not have the sufficient space required to install this item.  Please free up some space and try again.",
+                        "FreeItemsRestoreMsg":"The game only contains free items. To restore previously downloaded free content, simply download the free item(s) again.",
+                        "Exit":"Exit",
+                        "Help":"Help",
+                        "Restore":"Restore items",
+                        "Back":"Back",
+                        "Free":"Free",
+                        "Install":"Install",
+                        "Installed":"Installed",
+                        "BuyNow":"Buy now",
+                        "DontSeeYourItems":"DON'T SEE YOUR ITEMS?",
+                        "TapOnRestore":"Tap on the RESTORE ITEMS button to view"
+                    }
+                ]
+        },
+        {
+            "fr":
+                [
+                    {
+                        "LoadingItems":"Chargement des éléments...",
+                        "PurchasingItem":"Achat d'élément...",
+                        "DownloadingItem":"Téléchargement d'élément...",
+                        "RestoringItems":"Restauration des éléments...",
+                        "RestoreNothing":"0 élément restauré.",
+                        "RestoreNumItems":"Élément(s) restauré(s) : %d sur %d",
+                        "RestoreFinished":"Restauration terminée.",
+                        "MyStuff":"Mon equipement",
+                        "New":"Nouveau",
+                        "More":"Plus",
+                        "Dismiss":"Rejeter",
+                        "Cancel":"Annuler",
+                        "Close":"Fermer",
+                        "LowVersionMsg":"Pour télécharger d'autres contenus passionnants pour vos jeux, veuillez mettre à jour votre logiciel iTunes. C'est tout simple :\n1. Connectez votre appareil à votre ordinateur\n2. Ouvrez iTunes\n3. Cliquez sur « METTRE À JOUR »",
+                        "InsufficientSpaceMsg":"Vous ne disposez pas de l'espace nécessaire pour installer cet élément. Veuillez libérer de l'espace et réessayer.",
+                        "FreeItemsRestoreMsg":"Le jeu ne contient que des éléments gratuits. Pour restaurer le contenu gratuit précédemment téléchargé, il vous suffit de le télécharger de nouveau.",
+                        "Exit":"Sortir",
+                        "Help":"Aide",
+                        "Restore":"Restaurer éléments",
+                        "Back":"Retour",
+                        "Free":"Gratuit",
+                        "Install":"Installer",
+                        "Installed":"Installés",
+                        "BuyNow":"Acheter",
+                        "DontSeeYourItems":"VOUS NE VOYEZ PAS VOS ÉLÉMENTS?",
+                        "TapOnRestore":"Appuyez vite sur le bouton RESTAURER ÉLÉMENTS pour les afficher."
+                    }
+                ]
+            },
+        {
+            "it":
+                [
+                    {
+                        "LoadingItems":"Caricamento elementi...",
+                        "PurchasingItem":"Acquisto elemento...",
+                        "DownloadingItem":"Download elemento...",
+                        "RestoringItems":"Ripristino elementi...",
+                        "RestoreNothing":"0 elementi ripristinati.",
+                        "RestoreNumItems":"Ripristino elementi: %d di %d...",
+                        "RestoreFinished":"Ripristino terminato.",
+                        "MyStuff":"I miei oggetti",
+                        "New":"Nuovo",
+                        "More":"Altro",
+                        "Dismiss":"Elimina",
+                        "Cancel":"Annulla",
+                        "Close":"Chiudi",
+                        "LowVersionMsg":"Per scaricare altri fantastici contenuti ora disponibili per i tuoi giochi, aggiorna il software del tuo iTunes. È semplice:\n1. Collega il dispositivo al tuo computer\n2. Apri iTunes\n3. Fai clic su “AGGIORNA”",
+                        "InsufficientSpaceMsg":"Non disponi dello spazio necessario per installare questo elemento.  Libera dello spazio e riprova.",
+                        "FreeItemsRestoreMsg":"Questo gioco contiene esclusivamente degli elementi gratuiti. Per ripristinare i contenuti gratuiti precedentemente scaricati, devi semplicemente eseguire di nuovo il download.",
+                        "Exit":"Uscita",
+                        "Help":"Aiuto",
+                        "Restore":"Ripristinare elementi",
+                        "Back":"Indietro",
+                        "Free":"Gratis",
+                        "Install":"Installare",
+                        "Installed":"Istallato",
+                        "BuyNow":"Aquistare",
+                        "DontSeeYourItems":"NON VEDI I TUOI ELEMENTI?",
+                        "TapOnRestore":"Tocca il pulsante RIPRISTINA ELEMENTI per visualizzarli"
+                    }
+                ]
+        },
+        {
+            "de":
+                [
+                    {
+                        "LoadingItems":"Objekte werden geladen ...",
+                        "PurchasingItem":"Objekt wird gekauft ...",
+                        "DownloadingItem":"Objekt wird heruntergeladen ...",
+                        "RestoringItems":"Objekte werden wiederhergestellt ...",
+                        "RestoreNothing":"0 Objekte wiederhergestellt.",
+                        "RestoreNumItems":"Objekte werden wiederhergestellt: %d von %d ...",
+                        "RestoreFinished":"Wiederherstellen abgeschlossen.",
+                        "MyStuff":"Meine Objekte",
+                        "New":"Neu",
+                        "More":"Mehr",
+                        "Dismiss":"Abbrechen",
+                        "Cancel":"Abbrechen",
+                        "Close":"Schließen",
+                        "LowVersionMsg":"Aktualisiere bitte deine iTunes-Software, um weitere fantastische Inhalte für deine Spiele herunterzuladen. Das Update geht ganz einfach:\n1. Verbinde dein Gerät mit deinem Computer\n2. Öffne iTunes\n3. Klicke auf “UPDATE”",
+                        "InsufficientSpaceMsg":"Nicht genügend Speicherplatz für die Installation vorhanden. Bitte mach Speicherplatz frei und versuche es erneut.",
+                        "FreeItemsRestoreMsg":"Das Spiel enthält ausschließlich kostenlose Objekte. Lade dir das kostenlose Objekt/die kostenlosen Objekte einfach erneut herunter, um zuvor heruntergeladene kostenlose Inhalte wiederherzustellen.",
+                        "Exit":"Ausfahrt",
+                        "Help":"Hilfe",
+                        "Restore":"Objecte wiederherstellen",
+                        "Back":"Zurück",
+                        "Free":"Gratis",
+                        "Install":"Installieren",
+                        "Installed":"Installiert",
+                        "BuyNow":"Kaufen",
+                        "DontSeeYourItems":"SIEHST DU DEINE OBJEKTE NICHT?",
+                        "TapOnRestore":"Tippe den Button OBJEKTE WIEDERHERSTELLEN an damit sie angezeigt werden"
+                    }
+                ]
+        },
+        {
+            "es":
+                [
+                    {
+                        "LoadingItems":"Cargando artículos ...",
+                        "PurchasingItem":"Comprando artículo ...",
+                        "DownloadingItem":"Descargando artículo  ...",
+                        "RestoringItems":"Restaurando artículos ...",
+                        "RestoreNothing":"0 artículos restaurados.",
+                        "RestoreNumItems":"Restaurando %d de %d artículos ...",
+                        "RestoreFinished":"Restauración finalizada.",
+                        "MyStuff":"Mis cosas",
+                        "New":"Nuevo",
+                        "More":"Más",
+                        "Dismiss":"Descartar",
+                        "Cancel":"Cancelar",
+                        "Close":"Cerrar",
+                        "LowVersionMsg":"Para descargar más contenidos apasionantes disponibles actualmente para tus juegos, actualiza tu software iTunes. Es fácil:\n1. Conecta el dispositivo a tu ordenador\n2. Abre iTunes\n3. Pincha en “ACTUALIZAR”",
+                        "InsufficientSpaceMsg":"No dispones del espacio suficiente disponible para instalar este elemento. Por favor libera algo de espacio e inténtalo de nuevo.",
+                        "FreeItemsRestoreMsg":"El juego solo contiene objetos gratuitos. Para restablecer contenido gratuito descargado anteriormente no tienes más que volver a descargar los objetos gratuitos.",
+                        "Exit":"Salida",
+                        "Help":"Ayuda",
+                        "Restore":"Restablecer objectos",
+                        "Back":"Atrás",
+                        "Free":"Gratis",
+                        "Install":"Instalar",
+                        "Installed":"Instalado",
+                        "BuyNow":"Comprar",
+                        "DontSeeYourItems":"¿NO VES TUS OBJETOS?",
+                        "TapOnRestore":"Toca el botón RESTABLECER OBJETOS para verlos"
+                    }
+                ]
+        },
+        {
+            "ja":
+                [
+                    {
+                        "LoadingItems":"アイテムロード中 ...",
+                        "PurchasingItem":"アイテム購入中 ...",
+                        "DownloadingItem":"アイテムダウンロード中 ...",
+                        "RestoringItems":"アイテム復元中 ...",
+                        "RestoreNothing":"0アイテムを復元.",
+                        "RestoreNumItems":"%d/%dアイテムを復元中 ...",
+                        "RestoreFinished":"復元完了.",
+                        "MyStuff":"マイスタッフ",
+                        "New":"新規",
+                        "More":"もっと",
+                        "Dismiss":"棄却",
+                        "Cancel":"キャンセル",
+                        "Close":"Close",
+                        "LowVersionMsg":"EAのコンテンツをダウンロードするにはiPhone®/iPod touch®のソフトウェアを更新する必要があります。手順は簡単です：\n1. 本体をコンピュータに接続\n2. iTunesを起動\n3. 「更新」をクリック",
+                        "InsufficientSpaceMsg":"このアイテムをインストールするために必要な空き容量がありません。十分の空き容量を確保してから再度お試しください。",
+                        "FreeItemsRestoreMsg":"The game only contains free items. To restore previously downloaded free content, simply download the free item(s) again.",
+                        "Exit":"終了",
+                        "Help":"ヘルプ",
+                        "Restore":"アイテムを復元",
+                        "Back":"戻る",
+                        "Free":"無料",
+                        "Install":"インストール",
+                        "Installed":"インストール済み",
+                        "BuyNow":"購入",
+                        "DontSeeYourItems":"晡六したアイテムが見つからないですか？",
+                        "TapOnRestore":"「晡六済みのアイテムを役元」ボタンを捭してくださし！"
+                    }
+                ]
+        },
+        {
+            "zh":
+                [
+                    {
+                        "LoadingItems":"载入项目...",
+                        "PurchasingItem":"购买项目...",
+                        "DownloadingItem":"下载项目...",
+                        "RestoringItems":"恢复项目...",
+                        "RestoreNothing":"恢复0个项目。",
+                        "RestoreNumItems":"恢复 %d / %d 项目",
+                        "RestoreFinished":"恢复项目完成。",
+                        "MyStuff":"我的东西",
+                        "New":"新的",
+                        "More":"更多",
+                        "Dismiss":"放弃",
+                        "Cancel":"取消",
+                        "Close":"关闭",
+                        "LowVersionMsg":"你的游戏现在有更多很棒的内容可以下载，请升级你的iTunes软件。只要：\n1. 连结你的装置到你的计算机\n2. 打开iTunes\n3. 点击“升级”",
+                        "InsufficientSpaceMsg":"你没有足够的空间安装这个项目。请清出一些空间再重试。",
+                        "FreeItemsRestoreMsg":"The game only contains free items. To restore previously downloaded free content, simply download the free item(s) again.",
+                        "Exit":"退出",
+                        "Help":"帮助",
+                        "Restore":"恢复项目",
+                        "Back":"返回",
+                        "Free":"免费",
+                        "Install":"安装",
+                        "Installed":"已安装",
+                        "BuyNow":"现在购买",
+                        "DontSeeYourItems":"没看到您的物品？",
+                        "TapOnRestore":"点击“还原物品”键以查看"
+                    }
+                ]
+        },
+        {
+            "ko":
+                [
+                    {
+                        "LoadingItems":"아이템 로드 중...",
+                        "PurchasingItem":"아이템 구매 중...",
+                        "DownloadingItem":"아이템 다운로드 중...",
+                        "RestoringItems":"아이템 복원 중...",
+                        "RestoreNothing":"복원된 아이템이 없습니다.",
+                        "RestoreNumItems":"%d / %d 아이템이 복원되었습니다.",
+                        "RestoreFinished":"복원 완료",
+                        "MyStuff":"내 아이템",
+                        "New":"신규",
+                        "More":"더 보기",
+                        "Dismiss":"무시",
+                        "Cancel":"취소",
+                        "Close":"닫기",
+                        "LowVersionMsg":"현재 이용 가능한 게임의 더 많은 콘텐츠를 다운로드하려면, itunes 소프트웨어를 업데이트 해 주십시오. 쉽습니다. :\n1. 장치를 컴퓨터에 연결해 주십시오.\n2. iTunes를 엽니다.\n3. “UPDATE” / “업데이트“ 클릭",
+                        "InsufficientSpaceMsg":"이 아이템을 설치할 공간이 부족합니다. 여유 공간을 확보하고 다시 시도해 주십시오.",
+                        "FreeItemsRestoreMsg":"The game only contains free items. To restore previously downloaded free content, simply download the free item(s) again.",
+                        "Exit":"출구",
+                        "Help":"도움",
+                        "Restore":"항목을 복원",
+                        "Back":"뒤로",
+                        "Free":"무료",
+                        "Install":"설치",
+                        "Installed":"설치되어",
+                        "BuyNow":"구매",
+                        "DontSeeYourItems":"원하는항목을찾을수없습니까?",
+                        "TapOnRestore":"구매항목눌릭오기버튼을클릭해보세요"
+                    }
+                ]
+        },
+        {
+        "pt":
+                [
+                    {
+                        "LoadingItems":"Carregando Itens ...",
+                        "PurchasingItem":"Comprando Item ...",
+                        "DownloadingItem":"Recebendo Item ...",
+                        "RestoringItems":"Restaurando Itens ...",
+                        "RestoreNothing":"0 item restaurado.",
+                        "RestoreNumItems":"Restaurando %d de %d itens",
+                        "RestoreFinished":"Restauração concluída.",
+                        "MyStuff":"Minhas Coisas",
+                        "New":"Novo",
+                        "More":"Mais",
+                        "Dismiss":"Descartar",
+                        "Cancel":"Cancelar",
+                        "Close":"Fechar",
+                        "LowVersionMsg":"Para fazer o download de outros conteúdos incríveis disponíveis para seus jogos, atualize seu software do iTunes. É fácil:\n1. Conecte seu aparelho ao seu computador\n2. Abra o iTunes\n3. Clique em “ATUALIZAR”",
+                        "InsufficientSpaceMsg":"Você não tem o espaço suficiente necessário para instalar este item.  Libere um pouco de espaço e tente novamente.\",",
+                        "FreeItemsRestoreMsg":"O jogo contém apenas itens grátis. Para restaurar o conteúdo grátis obtido anteriormente, é só fazer o download dos itens novamente.",
+                        "Exit":"Sair",
+                        "Help":"Ajuda",
+                        "Restore":"Ajuda",
+                        "Back":"Voltar",
+                        "Free":"Grátis",
+                        "Install":"INSTALAR",
+                        "Installed":"INSTALADO",
+                        "BuyNow":"COMPRAR",
+                        "DontSeeYourItems":"NÃO ESTÁ VENDO SEUS ITENS?",
+                        "TapOnRestore":"Toque no botão Restaurar Itens para visualizá-los. "
+                    }
+                ]
+        },
+        {
+            "ru":
+                [
+                    {
+                        "LoadingItems":"Загрузка списка продуктов ...",
+                        "PurchasingItem":"Покупка ...",
+                        "DownloadingItem":"Загружаю ...",
+                        "RestoringItems":"Восстановление покупок ...",
+                        "RestoreNothing":"0 объектов восстановлено.",
+                        "RestoreNumItems":"Восстановление %d из %d покупок",
+                        "RestoreFinished":"Восстановление выполнено.",
+                        "MyStuff":"Мои покупки",
+                        "New":"Новое",
+                        "More":"Другое",
+                        "Dismiss":"Прервать",
+                        "Cancel":"Отмена",
+                        "Close":"Закрыть",
+                        "LowVersionMsg":"Для того чтобы загрузить больше интересного контента для ваших игр, обновите приложение iTunes. Это очень просто:\n1. Подсоедините мобильное устройство к своему компьютеру\n2. Запустите iTunes\n3. Нажмите «ОБНОВИТЬ»",
+                        "InsufficientSpaceMsg":"У вас недостаточно свободного места для установки. Освободите место и попробуйте еще раз.",
+                        "FreeItemsRestoreMsg":"Игра содержит только бесплатные объекты. Для восстановления ранее загруженного бесплатного контента повторно загрузите бесплатные объекты.",
+                        "Exit":"Выход",
+                        "Help":"Справка",
+                        "Restore":"Восстановление покупок",
+                        "Back":"Назад",
+                        "Free":"Бесплатно",
+                        "Install":"Установить",
+                        "Installed":"Установлено",
+                        "BuyNow":"Купить",
+                        "DontSeeYourItems":"Не видишь своих покупок?",
+                        "TapOnRestore":"Нажми на кнопку восстановления покупок"
+                    }
+                ]
+        },     
+        {
+            "nl":
+                [
+                    {
+                        "LoadingItems":"Artikels laden ...",
+                        "PurchasingItem":"Artikel kopen ...",
+                        "DownloadingItem":"Artikel downloaden ...",
+                        "RestoringItems":"Artikels herstellen ...",
+                        "RestoreNothing":"0 artikels hersteld.",
+                        "RestoreNumItems":"%d van %d artikels herstellen",
+                        "RestoreFinished":"Herstellen voltooid",
+                        "MyStuff":"Mijn games",
+                        "New":"Nieuw",
+                        "More":"Meer",
+                        "Dismiss":"Negeren",
+                        "Cancel":"Annuleren",
+                        "Close":"Sluiten",
+                        "LowVersionMsg":"Om meer geweldige content te downloaden die momenteel voor je games verkrijgbaar is, werk je de software van iTunes bij. Dat is heel eenvoudig:\n1. Sluit je apparatuur aan op de computer\n2. Open iTunes\n3. Klik op “BIJWERKEN”",
+                        "InsufficientSpaceMsg":"Je hebt niet voldoende ruimte om dit product te installeren. Maak ruimte vrij en probeer het opnieuw.\",",
+                        "FreeItemsRestoreMsg":"Het spel bevat alleen gratis artikels. Om gratis content te herstellen die je eerder hebt gedownload, download je de gratis artikel(s) opnieuw.",
+                        "Exit":"Afsluiten",
+                        "Help":"Help",
+                        "Restore":"Artikels herstellen",
+                        "Back":"Terug",
+                        "Free":"Gratis",
+                        "Install":"INSTALLEREN",
+                        "Installed":"GEÏNSTALLEERD",
+                        "BuyNow":"KOOP NU",
+                        "DontSeeYourItems":"ZIE JE GEEN ARTIKELS?",
+                        "TapOnRestore":"Tik op de knop Artikels herstellen om ze weer te geven. "
+                    }
+                ]
+        }        
+    ]
+}

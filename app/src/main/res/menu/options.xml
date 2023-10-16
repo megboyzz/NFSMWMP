@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionRunTheGame" android:title="@string/run_game_title"/>
+    <item android:id="@+id/optionSettings" android:title="@string/settings_title"/>
+    <item
+        android:id="@+id/optionCheckRecovers"
+        android:title="@string/recover_title" />
+    <item android:id="@+id/optionDeleteData" android:title="@string/delete_game_data_title"/>
+</menu>

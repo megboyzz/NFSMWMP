@@ -1,0 +1,53 @@
+HERUNTERLADEN UND SPIELEN
+Für %% werden ca. %% MB an zusätzlichen Inhalten benötigt. Wähle "Herunterladen", um zu beginnen. Download-Zeiten sind von Netzwerk und Standort abhängig. Wir empfehlen eine Wi-Fi-Verbindung.
+OK
+NICHT GENÜGEND SPEICHERPLATZ
+Für dieses Spiel werden %% MB benötigt. Lege eine SD Memory Card ein oder mach Speicherplatz darauf frei, um mit dem Herunterladen zu beginnen.
+HERUNTERLADEN
+BEENDEN
+KEINE WI-FI-VERBINDUNG VORHANDEN
+Wir empfehlen eine Wi-Fi-Verbindung, da dadurch das Herunterladen schneller geht. Wähle "WI-FI", um eine Wi-Fi-Verbindung herzustellen und fortzufahren.
+3G NICHT VERFÜGBAR
+3G-Netzwerk zurzeit nicht verfügbar. Wir empfehlen eine Wi-Fi-Verbindung, da dadurch das Herunterladen schneller geht. Wähle "WI-FI", um eine Wi-Fi-Verbindung herzustellen und fortzufahren, oder versuche es erneut, wenn der Dienst wieder verfügbar ist.
+HERUNTERLADEN FEHLGESCHLAGEN
+Der Fortschritt wurde gespeichert. Verbinde dich erneut und starte die App neu, um mit dem Herunterladen fortzufahren. (%%)
+HERUNTERLADEN WURDE UNTERBROCHEN
+WIEDERHOLEN
+Versuche es erneut in [x, x-1...] Sekunden.
+WI-FI
+JA
+NEIN
+HERUNTERLADEN
+Herunterladen läuft...
+UPDATES
+Sucht nach Updates...
+3G
+Möchtest du wirklich über 3G herunterladen? Das Herunterladen kann bis zu zwei Stunden dauern, und es können Kosten entstehen.
+UPDATES VERFÜGBAR
+%% erfordert eine Aktualisierung mit %% MB. Wähle die Option "Herunterladen", um die Aktualisierung zu starten.
+NICHT UNTERSTÜTZTES GERÄT
+Beim Herunterladen des Spiels ist ein Fehler aufgetreten. Wähle auf www.eamobile.com/countrygate dein Land und klicke auf den Link zum Kundendienst.
+RÜCKSETZ-Taste drücken, um Wi-Fi zu konfigurieren.
+RÜCKSETZ-Taste drücken, um 3G zu benutzen.
+Wähle die Option "3G", um 3G zu benutzen.
+Eine Wi-Fi-Verbindung ist erforderlich, um zusätzliche Inhalte herunterzuladen. Bitte aktiviere Wi-Fi und versuche es erneut.
+SERVER-FEHLER
+Ein Server-Fehler ist aufgetreten. Bitte besuche www.eamobile.com/countrygate, um dein Land auszuwählen und klicke auf den Kundendienst-Link. (%%)
+Signal-Stärke
+%1 MB von %2 MB    %3 kb/s
+ÜBERPRÜFUNG AUF UPDATES
+Inhalte werden übergeprüft. Bitte warten, während die Serververbindung hergestellt wird...
+3G-VERBINDUNG
+deaktiviert
+Möchtest du das Herunterladen der Inhalte anhalten und schließen?
+ZUSÄTZLICHE INHALTE NICHT AKTUELL
+Die Inhalte auf dem Gerät sind nicht mit der Spielversion kompatibel. Bitte aktualisiere sie und versuche es erneut.
+Das Spiel lässt sich nicht starten, wenn du das Update nicht herunterlädst.
+Alte Inhalte werden gelöscht ...
+Wifi-Verbindung unterbrochen. Herunterladen pausiert. Herunterladen über Datenverbindung fortsetzen?
+Nur dieses Mal
+Immer
+Abbrechen
+%% benötigt etwa %% MB zum Herunterladen und mindestens %% MB freien Speicherplatz auf deinem Gerät oder deiner SD-Karte. Wähle "Herunterladen", um zu beginnen. Die Downloadzeiten sind vom Netzwerk und deinen Standort abhängig. Wi-Fi-Verbindung empfohlen.
+Für dein Spiel sind %% MB Speicherplatz erforderlich. Auf deinem Gerät sind jedoch nur %% MB verfügbar. Bitte schaffe zusätzlichen Speicherplatz auf deinem Gerät, um mit dem Download zu beginnen.
+Debug Test Title

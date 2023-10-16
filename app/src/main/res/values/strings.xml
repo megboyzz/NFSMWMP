@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFS Most Wanted</string>
+    <string name="app_full_name">NFS Most Wanted</string>
+    <string name="icon_name">@drawable/icon</string>
+    <string name="empty" />
+    <string name="nimble_configuration">live</string>
+    <string name="app_id">301771293238871</string>
+    <string name="notification_download_complete">Download complete</string>
+    <string name="notification_download_failed">Download unsuccessful</string>
+    <string name="state_unknown">Starting...</string>
+    <string name="state_idle">Waiting for download to start</string>
+    <string name="state_fetching_url">Looking for resources to download</string>
+    <string name="state_connecting">Connecting to the download server</string>
+    <string name="state_downloading">Downloading resources</string>
+    <string name="state_completed">Download finished</string>
+    <string name="state_paused_network_unavailable">Download paused because no network is available</string>
+    <string name="state_paused_network_setup_failure">Download paused. Test a website in browser</string>
+    <string name="state_paused_by_request">Download paused</string>
+    <string name="state_paused_wifi_unavailable">Download paused because wifi is unavailable</string>
+    <string name="state_paused_wifi_disabled">Download paused because wifi is disabled</string>
+    <string name="state_paused_roaming">Download paused because you are roaming</string>
+    <string name="state_paused_sdcard_unavailable">Download paused because the external storage is unavailable</string>
+    <string name="state_failed_unlicensed">Download failed because you may not have purchased this app</string>
+    <string name="state_failed_fetching_url">Download failed because the resources could not be found</string>
+    <string name="state_failed_sdcard_full">Download failed because the external storage is full</string>
+    <string name="state_failed_cancelled">Download cancelled</string>
+    <string name="state_failed">Download failed</string>
+    <string name="kilobytes_per_second">%1$s KB/s</string>
+    <string name="time_remaining">Time remaining: %1$s</string>
+    <string name="time_remaining_notification">%1$s left</string>
+
+    <!-- Блок строк для дев меню -->
+    <string name="dev_menu_title">NFSMW DevMenu v%3s</string>
+
+    <string name="cn_title">Chinees</string>
+    <string name="nl_title">Ninderlad</string>
+    <string name="en_title">English</string>
+    <string name="fr_title">French</string>
+    <string name="de_title">German</string>
+    <string name="it_title">Italian</string>
+    <string name="jp_title">Japanese</string>
+    <string name="kr_title">Korean</string>
+    <string name="br_title">Portuguese</string>
+    <string name="ru_title">Russian</string>
+    <string name="es_title">Spanish</string>
+
+    <string name="external_store_title">Game cache</string>
+    <string name="internal_store_title">Internal data</string>
+
+    <string name="run_game_title">Run the game!</string>
+    <string name="settings_title">Settings</string>
+    <string name="delete_game_data_title">Delete game data</string>
+
+    <string name="synchronize_sys_lang_title">System language</string>
+    <string name="choose_lang_title">Choose in game language</string>
+
+    <string name="choose_save_file_title">Choose nfstr_save.sb save file</string>
+    <string name="choose_svmw_file_title">Choose *.svmw save file</string>
+    <string name="create_svmw_file_title">Create *.svmw save file</string>
+    <string name="switch_off_devmenu_title">Switch off the DevMenu</string>
+
+    <string name="ok_title">OK</string>
+    <string name="cancel_title">Cancel</string>
+
+    <string name="saves_title">Saves</string>
+    <string name="current_lang" translatable="false">current_lang</string>
+    <string name="back_title">Back</string>
+    <string name="replace_file_title">Replace file</string>
+    <string name="remove_file_title">Remove file</string>
+    <string name="track_file_title">Track the file</string>
+    <string name="folder_title">Folder</string>
+    <string name="file_title">File</string>
+    <string name="recover_file_title">Recover</string>
+    <string name="sure_remove_title">Sure you want to delete %s?</string>
+    <string name="file_props_title">Properties</string>
+    <string name="file_lastmod_title">Last modified:</string>
+    <string name="file_size_title">Size:</string>
+    <string name="hide_file_title">Hide file</string>
+    <string name="sure_remove_all_data_title">Sure you want to delete all of app data?</string>
+    <string name="remove_action_title">Delete</string>
+    <string name="recover_title">Show files to Recover</string>
+    <string name="hint_name_svmw">Name of svmw file</string>
+    <string name="hint_des_svmw">Description of svmw</string>
+    <string name="title_svmw_create_btn">Create SVMW!</string>
+    <string name="title_svmw_where_to_save_btn">Choose where save</string>
+    <string name="toast_strings_must_be_entered">Fields cant be empty</string>
+    <string name="title_use_cur_save">Use current nfstr_save.sb?</string>
+    <string name="title_select_save_file">Select the nfstr_save.sb</string>
+    <string name="title_date_of_creation">Date of creation</string>
+    <string name="title_load_svmw">Load svmw</string>
+    <string name="msg_devmenu_off">Are you sure you want to disable DevMenu? To enable it, you will need to create an empty file called DevMenu in the root of the game cache</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+
+</resources>

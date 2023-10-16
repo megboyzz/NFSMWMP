@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<components>
+    <Tracking>com.ea.nimble.tracking.Tracking</Tracking>
+    <TrackingSynergy>com.ea.nimble.tracking.NimbleTrackingSynergyComponent</TrackingSynergy>
+    <TrackingS2S>com.ea.nimble.tracking.NimbleTrackingS2SComponent</TrackingS2S>
+    <TrackingEventWrangler>com.ea.nimble.tracking.TrackingEventWrangler</TrackingEventWrangler>
+    <Origin>com.ea.nimble.origin.Origin</Origin>
+    <InAppMessage>com.ea.nimble.inappmessage.InAppMessage</InAppMessage>
+    <PushNotification>com.ea.nimble.pushnotificationgoogle.PushNotification</PushNotification>
+    <GooglePlay>com.ea.nimble.mtx.googleplay.GooglePlay</GooglePlay>
+    <AmazonStore>com.ea.nimble.mtx.amazon.AmazonStore</AmazonStore>
+    <CrashReporter>com.ea.nimble.crashreporter.CrashTrapper</CrashReporter>
+    <Identity>com.ea.nimble.identity.NimbleIdentityImpl</Identity>
+    <IdentityOrigin>com.ea.nimble.identity.AuthenticatorOrigin</IdentityOrigin>
+    <IdentityFacebook>com.ea.nimble.identity.AuthenticatorFacebook</IdentityFacebook>
+    <IdentityAnonymous>com.ea.nimble.identity.AuthenticatorAnonymous</IdentityAnonymous>
+    <FriendsService>com.ea.nimble.friends.NimbleFriendsImpl</FriendsService>
+    <OriginFriendsService>com.ea.nimble.friends.NimbleOriginFriendsServiceImpl</OriginFriendsService>
+</components>

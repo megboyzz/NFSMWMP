@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/language_list"
+        android:entryValues="@array/language_list_ids"
+        android:key="@string/current_lang"
+        android:title="@string/choose_lang_title" />
+
+    <PreferenceCategory 
+    android:title="@string/saves_title">
+
+        <Preference
+            android:title="@string/choose_save_file_title"
+            android:key="@string/choose_save_file_title"/>
+
+        <Preference
+            android:title="@string/choose_svmw_file_title"
+            android:key="@string/choose_svmw_file_title"/>
+
+        <Preference
+            android:title="@string/create_svmw_file_title"
+            android:key="@string/create_svmw_file_title"/>
+
+    </PreferenceCategory>
+
+        <Preference
+            android:title="@string/switch_off_devmenu_title"
+            android:key="@string/switch_off_devmenu_title"/>
+
+</PreferenceScreen>

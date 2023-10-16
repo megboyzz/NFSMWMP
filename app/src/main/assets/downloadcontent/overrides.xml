@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+The Device Overrides file is used to specify device-specific resolution overrides.  This file is optional, and is intended to be 
+used by game teams only.
+
+Structure is as follows:
+
+<devices>
+ 	<device name="DeviceName1">
+		<resolution width="123" height="456"/> 	
+ 	</device>
+ 	<device name="DeviceName2">
+		<resolution width="789" height="012"/> 	
+ 	</device>
+ 	...
+ 	
+	<fallback>
+		<forceDevice name="Droid"/>		
+		<resolution width="480" height="320"/>
+	</fallback>	
+</devices>
+
+In the "devices" element add or remove devices as needed for your game. The device name needs to be the same returned by android.os.Build.MODEL (Android SDK). The example below is an override for SonyEricsson Xperia (X10i):
+
+	<device name="X10i">
+		<resolution width="480" height="320"/> 
+	</device>	
+
+Note, the device name is case-sensitive and matches the whole name only. In other words, "x10i" or "SonyEricsson X10i" will not match "X10i" (the correct device name)
+
+In addition, a single 'fallback' device may be specified.  A fallback device is one that is used if the ADC is unable to download
+the current device's assets (after overrides have been applied).  At minimal the fallback resolution must be present.  The ADC will use
+the current device with the fallback resolution and attempt the download again.  If the 'forceDevice' element is provided as well, 
+the ADC will download assets for *that* device assets at the specified resolution.
+
+For example, specifying the following fallback:
+
+	<fallback>
+		<forceDevice name="motorola-DROIDX"/>		
+		<resolution width="480" height="320"/>
+	</fallback>
+	
+will force the ADC to attempt download assets for a motorola-DROIDX at 480x320, if was unable to find appropriate assets for the current device
+and resolution.
+ -->
+ 
+ 
+<devices>
+	<!-- Sample override for a device named "SampleDevice" -->
+	<device name="SampleDevice">
+		<!-- Force "SampleDevice" to always use 480x320 resolution -->
+		<resolution width="480" height="320"/> 
+	</device>	
+	
+	<!-- Add more devices here as necessary ... -->
+	
+	<!-- 
+		OPTIONAL:
+		
+		Fallback device.  If no assets for the current device is found at the current resolution,
+		assets for the fallback is pulled instead.  If fallback is not specified or assets are not
+		available, the user will receive a 'device not supported' message 
+	  -->
+	<!--
+	<fallback>
+		<forceDevice name="motorola-DROIDX"/>	- OPTIONAL : Device fallback, specify *full* device string		
+		<resolution width="480" height="320"/>	- REQUIRED : Resolution fallback
+	</fallback>	
+	-->
+</devices>

@@ -1,0 +1,260 @@
+// Supported parameters:
+//
+// font-size                :Npx or Npt. (font-size : 12px) (font-size : 12pt)
+// font-style               :normal,italic,oblique
+// font-weight              :normal,bold
+// font-variant             :normal,small-caps
+// font-pitch               :variable,fixed
+// font-smooth              :auto,never,always
+// font-stretch             :N
+// font-emphasize-style     :none,accent,dot,circle,disc
+// font-emphasize-position  :before,after
+// text-decoration          :underline,overline,line-through
+// text-linespacing         :N
+// text-letterspacing       :(letter-spacing: 12px) (letter-spacing: -0.5px)
+// text-wordspacing         :N
+// text-align               :left,center,right,justify
+// text-valign              :top,middle,bottom
+// text-justify             :inter-word,inter-ideograph,distribute,newspaper,inter-cluster,kashida
+// text-overflow-mode       :none,clip,ellipsis,ellipsis-word
+// color                    :#RGB or #RGBA. (color : #cc2255) (color : #cc2255ff)
+// background-color         :#RGB or #RGBA. (color : #cc2255) (color : #cc2255ff)
+// wrap-option              :wrap,no-wrap,soft-wrap,hard-wrap,emergency
+// digit-substitution       :none,context,western,national,traditional
+// password-mode            :none,password
+
+@font "Arial.ttf";
+@font "ArialBold.ttf";
+@font "STHeiti-Medium.ttc";
+@font "AppleGothic.ttf";
+@font "AppleGothic.otf";
+
+EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-smooth:always;
+   font-weight:normal;
+   font-size:8px;
+}
+
+DefaultText(0x0f170dc1) : EASPDefaultTextStyle{
+}
+
+// this should be defined by the application; all UTFWinControls will default to this style
+WindowDefaultStyle(1) : EASPDefaultTextStyle {
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+}
+
+
+TextEditStyle(0x01010202) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:24px;
+   /*font-effect: outline 2 2 #0000ff #000000]*/
+}
+
+DialogTitle(0xacbf4564) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle;
+   text-overflow-mode:ellipsis;
+   wrap-option:no-wrap;
+}
+
+DialogTitle_480x800_DMG(0x0db7c2e0) : EASPDefaultTextStyle{
+   text-valign:middle;
+   text-overflow-mode:ellipsis;
+   wrap-option:no-wrap;
+   font-size:11px;
+   font-weight:bold;
+}
+
+DialogTitle_DMG(0x0db7c300) : EASPDefaultTextStyle{
+   text-valign:middle;
+   text-overflow-mode:ellipsis;
+   wrap-option:no-wrap;
+   font-size:8px;
+}
+
+ButtonCaption(0xaf14b67e) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:center;
+}
+
+LargeButtonCaption(0xaf90b579) : EASPDefaultTextStyle{
+   font-family:"Arial", "STHeiti", "AppleGothic";
+   text-valign:middle; 
+   text-align:center;
+   font-size:30px;
+   font-weight:bold;
+}
+
+WatchWindowLabel(0x6fb342b7) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:8px;
+   text-valign:middle; 
+   text-align:right;
+}
+
+WatchWindowValue(0x6fb342b8) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:8px;
+   text-valign:middle; 
+   text-align:left;
+}
+
+OriginStandart(0x6fb342b9) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:left;
+   font-size:8px;
+   text-overflow-mode:ellipsis;
+}
+
+OriginBold(0x6fb342ba) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:left;
+   font-size:8px;
+   /*font-weight:bold;*/
+}
+
+OriginBig(0x6fb342bb) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:left;
+   font-size:15px;
+}
+
+OriginMB(0x6fb342be) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-overflow-mode:ellipsis;
+   wrap-option:no-wrap;
+   text-valign:middle; 
+   text-align:left;
+   font-size:10px;
+}
+
+OriginPassword(0x6fb342bc) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:left;
+   font-size:8px;
+   password-mode:password;
+}
+
+ButtonCaption_480x800(0x1f68321c) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:center;
+   font-size:12px;
+   font-weight:bold;
+}
+
+DialogTitle_480x800(0xcc84fea0) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle;
+   text-overflow-mode:ellipsis;
+   wrap-option:no-wrap;
+   font-size:12px;
+   font-weight:bold;
+}
+
+WatchWindowLabel_480x800(0xbd9cec49) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:12px;
+   text-valign:middle; 
+   text-align:right;
+   font-weight:bold;
+}
+
+OriginHypertext(0x846af2dc) : EASPDefaultTextStyle{
+   text-valign:middle; 
+   text-align:left;
+   font-size:8px;   
+   text-decoration:underline;
+}
+
+MediumButtonCaption(0xdeadfeed) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:left;
+   font-size:15px;
+}
+
+OriginDigits(0x6fb348bc) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   text-valign:middle; 
+   text-align:left;
+   font-size:8px;
+   digit-substitution:context;
+}
+
+OriginIOS(0x0da7bac0) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:11px;
+   text-valign:middle; 
+   text-align:right;
+   font-weight:bold;
+}
+
+OriginIOS2(0x0da7c280) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:9px;
+   text-valign:middle; 
+   text-align:right;
+   font-weight:bold;
+   text-overflow-mode:ellipsis;
+}
+
+OriginIOS3(0x0da7ccf0) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:13px;
+   text-overflow-mode:ellipsis;
+   text-valign:middle; 
+   text-align:right;
+   font-weight:bold;
+}
+
+OriginIOS4(0x0da812a0) : EASPDefaultTextStyle{
+   font-family:"Arial", "AppleGothic", "Heiti TC", ".Heiti J", ".Heiti K", "Heiti SC", "STHeiti";
+   font-size:10px;
+   text-valign:middle; 
+   text-align:right;
+   font-weight:bold;
+}
+
+OriginIOSnom7(0x0dafd280) : EASPDefaultTextStyle{
+   font-size:7px;
+   text-valign:middle; 
+   text-align:right;
+}
+
+OriginIOSnom8(0x0dafd2a0) : EASPDefaultTextStyle{
+   font-size:8px;
+   text-valign:middle; 
+   text-align:right;
+}
+
+OriginIOSnom9(0x0dafd2d0) : EASPDefaultTextStyle{
+   font-size:9px;
+   text-valign:middle; 
+   text-align:right;
+}
+
+OriginIOSnom9l(0x0dafee30) : EASPDefaultTextStyle{
+   font-size:9px;
+   text-valign:middle; 
+   text-align:left;
+}
+
+OriginIOSnom10(0x0dafd2f0) : EASPDefaultTextStyle{
+   font-size:10px;
+   text-valign:middle; 
+   text-align:right;
+   font-weight:bold;
+}
+
+OriginIOSnom14(0x0dafd310) : EASPDefaultTextStyle{
+   font-size:14px;
+   text-valign:middle; 
+   text-align:right;
+}
