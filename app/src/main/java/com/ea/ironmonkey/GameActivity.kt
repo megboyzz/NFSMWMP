@@ -36,7 +36,7 @@ import kotlin.math.min
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
-
+//TODO при заходе в магазин - вылет
 class GameActivity : ComponentActivity(), DrawFrameListener {
 
     init {
@@ -44,14 +44,6 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         System.loadLibrary("app")
     }
 
-    private val lifecycleNames = arrayOf(
-        "LIFECYCLE_NONE",
-        "LIFECYCLE_CREATED",
-        "LIFECYCLE_STARTED",
-        "LIFECYCLE_RUNNING",
-        "LIFECYCLE_STOPPED",
-        "LIFECYCLE_DESTROYED"
-    )
     private var laststate = 0
     private var lifecycleOldSystem = 0
     private var easpHandler: EASPHandler? = null
@@ -361,7 +353,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         if (lifecycleOldSystem >= 5) {
             Log.w(
                 this.localClassName,
-                "onDestroy ignored, lifecycle is already " + lifecycleNames[lifecycleOldSystem]
+                "onDestroy ignored, lifecycle is already ${lifecycle.currentState}"
             )
             return
         }
@@ -465,7 +457,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         if (lifecycleOldSystem != 3) {
             Log.w(
                 this.localClassName,
-                "onPause ignored, lifecycle is currently " + lifecycleNames[lifecycleOldSystem]
+                "onPause ignored, lifecycle is currently ${lifecycle.currentState}"
             )
             return
         }
@@ -498,7 +490,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         if (lifecycleOldSystem == 3) {
             Log.w(
                 this.localClassName,
-                "onResume ignored, lifecycle is currently ${lifecycleNames[lifecycleOldSystem]}"
+                "onResume ignored, lifecycle is currently ${lifecycle.currentState}"
             )
             return
         }
@@ -530,7 +522,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         }
         Log.w(
             this.localClassName,
-            "onStart ignored, lifecycle is already " + lifecycleNames[lifecycleOldSystem]
+            "onStart ignored, lifecycle is already ${lifecycle.currentState}"
         )
     }
 
@@ -538,10 +530,10 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         super.onStop()
         Log.i("Debug", "onStop")
         Log.i(this.localClassName, "onStop")
-        if (lifecycleOldSystem >= 4) {
+        if (lifecycle.currentState >= Lifecycle.State.RESUMED) {
             Log.w(
                 this.localClassName,
-                "onStop ignored, lifecycle is already ${lifecycleNames[lifecycleOldSystem]}"
+                "onStop ignored, lifecycle is already ${lifecycle.currentState}"
             )
             return
         }
