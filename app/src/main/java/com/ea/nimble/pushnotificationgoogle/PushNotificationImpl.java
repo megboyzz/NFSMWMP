@@ -27,7 +27,6 @@ import com.ea.nimble.SynergyNetworkConnectionHandle;
 import com.ea.nimble.Utility;
 import com.ea.nimble.identity.INimbleIdentity;
 import com.ea.nimble.identity.INimbleIdentityAuthenticator;
-import com.google.android.gcm.GCMRegistrar;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -133,7 +132,6 @@ IPushNotification {
         if (this.m_handleMessageReceiver != null) {
             context.unregisterReceiver(this.m_handleMessageReceiver);
         }
-        GCMRegistrar.onDestroy(context);
         Utility.unregisterReceiver(this.m_synergyIdChangedReceiver);
         Utility.unregisterReceiver(this.m_IdentityChangedReceiver);
     }
@@ -150,48 +148,7 @@ IPushNotification {
 
     @Override
     public void register() {
-        this.trackStuff();
-        this.checkNotNull("927779459434", "SENDER_ID");
-        Log.Helper.LOGD(this, "Nimble PN Component is attempting to register this application for push notifications with the GCM service");
-        Context applicationContext = ApplicationEnvironment.getComponent().getApplicationContext();
-        try {
-            GCMRegistrar.checkDevice(applicationContext);
-            GCMRegistrar.checkManifest(applicationContext);
-        }
-        catch (Exception exception) {
-            Log.Helper.LOGD(this, "Nimble PN Component reports that GCMRegistrar checks have failed. PN service will not be available");
-            this.m_handleMessageReceiver = null;
-            return;
-        }
-        Log.Helper.LOGD(this, "Nimble PN Component has passed GCMRegistrar checks and will now attempt to get a valid push token");
-        new IntentFilter("com.ea.nimble.pushnotificationgoogle.intent.RETRY").addCategory("com.ea.nimble.pushnotificationgoogle");
-        applicationContext.registerReceiver(this.m_handleMessageReceiver, new IntentFilter("com.ea.nimble.pushnotificationgoogle.DISPLAY_MESSAGE"));
 
-        final String string2 = GCMRegistrar.getRegistrationId(applicationContext);
-        if (string2.equals("")) {
-            Log.Helper.LOGV(this, "GCM - attempting to register with google");
-            GCMRegistrar.register(applicationContext, "927779459434");
-            return;
-        }
-        Log.Helper.LOGV(this, "GCM - Already registered");
-        if (SynergyEnvironment.getComponent().getServerUrlWithKey("synergy.m2u") != null) {
-            if (ApplicationEnvironment.getComponent() == null) return;
-            if (!SynergyEnvironment.getComponent().isDataAvailable()) return;
-            PushNotification.registerTokenWithSynergy(applicationContext, string2);
-            return;
-        }
-        Log.Helper.LOGD(this, "GCM - Already registered but nimble does not have synergy URL so we can not store token yet... waiting...");
-        BroadcastReceiver br = new BroadcastReceiver(){
-
-            public void onReceive(Context context, Intent intent) {
-                if (intent.getExtras() == null) return;
-                if (!intent.getStringExtra("result").equals("1")) return;
-                Log.Helper.LOGD((Object)this, "GCM - received notification that environment is online. Sending token to synergy");
-                PushNotification.registerTokenWithSynergy(context, string2);
-            }
-        };
-        Utility.registerReceiver("nimble.environment.notification.startup_requests_finished", br);
-        Utility.registerReceiver("nimble.environment.notification.restored_from_persistent", br);
     }
 
     @Override

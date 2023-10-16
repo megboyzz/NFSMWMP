@@ -4,7 +4,6 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 
 public class Accelerometer implements SensorEventListener {
     private int bufferReadIndex;
@@ -30,10 +29,10 @@ public class Accelerometer implements SensorEventListener {
     }
 
     private void register() {
-        if (!this.registered && this.samplesPerSecond > BitmapDescriptorFactory.HUE_RED) {
+        if (!this.registered && this.samplesPerSecond > 0) {
             this.sensorManager.registerListener(this, this.sensor, getSensorDelay());
             this.registered = true;
-        } else if (this.registered && this.samplesPerSecond == BitmapDescriptorFactory.HUE_RED) {
+        } else if (this.registered && this.samplesPerSecond == 0) {
             this.sensorManager.unregisterListener(this);
             this.registered = false;
         }

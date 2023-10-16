@@ -3,8 +3,6 @@ package com.ea.nimble.friends;
 import com.ea.nimble.Base;
 import com.ea.nimble.Error;
 import com.ea.nimble.NetworkConnectionHandle;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,7 +11,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* loaded from: stdlib.jar:com/ea/nimble/friends/NimbleFriendsUtility.class */
 class NimbleFriendsUtility {
     NimbleFriendsUtility() {
     }
@@ -31,25 +28,7 @@ class NimbleFriendsUtility {
     }
 
     public static HashMap<String, Object> parseBodyJSONData(NetworkConnectionHandle networkConnectionHandle) throws Error {
-        InputStream dataStream = networkConnectionHandle.getResponse().getDataStream();
-        if (dataStream == null || dataStream.toString().length() == 0) {
-            throw new NimbleFriendsError(networkConnectionHandle.getResponse().getStatusCode(), networkConnectionHandle.getResponse().getError().getMessage());
-        }
-        Scanner useDelimiter = new Scanner(dataStream).useDelimiter("\\A");
-        String str = "";
-        if (useDelimiter.hasNext()) {
-            str = useDelimiter.next();
-        }
-        useDelimiter.close();
-        HashMap<String, Object> hashMap = null;
-        if (str != null) {
-            hashMap = null;
-            if (str.length() > 0) {
-                hashMap = (HashMap) new GsonBuilder().serializeNulls().create().fromJson(str, new TypeToken<HashMap<String, Object>>() { // from class: com.ea.nimble.friends.NimbleFriendsUtility.1
-                }.getType());
-            }
-        }
-        return hashMap;
+        return null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

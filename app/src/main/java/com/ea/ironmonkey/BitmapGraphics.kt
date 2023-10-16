@@ -1,50 +1,51 @@
-package com.ea.ironmonkey;
+package com.ea.ironmonkey
 
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.Typeface;
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.PorterDuff
+import android.graphics.Typeface
 
-public class BitmapGraphics {
-    private Bitmap bitmap;
-    private Canvas canvas = new Canvas();
+//Весь текст в игре отрисовывается от сюда
+class BitmapGraphics(width: Int, height: Int) {
 
-    public BitmapGraphics(int i, int i2) {
-        this.bitmap = Bitmap.createBitmap(i, i2, Bitmap.Config.ARGB_8888);
-        this.canvas.setBitmap(this.bitmap);
+    private val bitmap: Bitmap
+    private val canvas = Canvas()
+
+    // get метод сам не создается, его нужно указывать явно
+    fun getBitmap(): Bitmap = bitmap
+    init {
+        bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+        canvas.setBitmap(bitmap)
     }
 
-    private static Paint createPaint(Typeface typeface, float f) {
-        Paint paint = new Paint();
-        paint.setTypeface(typeface);
-        paint.setTextSize(f);
-        paint.setColor(-1);
-        paint.setAntiAlias(true);
-        return paint;
-    }
+    fun clear() = canvas.drawColor(0, PorterDuff.Mode.CLEAR)
 
-    public static Paint createPaintFromFamilyName(String str, float f) {
-        return createPaint(Typeface.create(str, 0), f);
-    }
+    //Здесь отрисовывается весь текст в игре
+    fun drawString(paint: Paint, text: String, x: Int, y: Int) = 
+        canvas.drawText(text, x.toFloat(), y.toFloat(), paint)
 
-    public static Paint createPaintFromFile(String str, float f) {
-        return createPaint(Typeface.createFromFile(str), f);
-    }
+    companion object {
 
-    public void clear() {
-        this.canvas.drawColor(0, PorterDuff.Mode.CLEAR);
-    }
+        private infix fun Typeface.withSize(textSize: Float): Paint{
+            val paint = Paint()
+            paint.setTypeface(this)
+            paint.textSize = textSize
+            paint.setColor(-1)
+            paint.isAntiAlias = true
+            return paint
+        }
+        
+        
 
-    public void drawString(Paint paint, String str, int i, int i2) {
-        this.canvas.drawText(str, (float) i, (float) i2, paint);
-    }
+        @JvmStatic
+        fun createPaintFromFamilyName(familyName: String, textSize: Float): Paint {
+            return Typeface.create(familyName, Typeface.BOLD_ITALIC) withSize textSize
+        }
 
-    public Bitmap getBitmap() {
-        return this.bitmap;
-    }
-
-    public Canvas getCanvas() {
-        return this.canvas;
+        @JvmStatic
+        fun createPaintFromFile(path: String, textSize: Float): Paint {
+            return Typeface.createFromFile(path) withSize textSize
+        }
     }
 }

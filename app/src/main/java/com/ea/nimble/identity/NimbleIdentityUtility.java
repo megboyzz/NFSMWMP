@@ -5,8 +5,6 @@ import android.annotation.SuppressLint;
 import com.ea.nimble.Error;
 import com.ea.nimble.NetworkConnectionHandle;
 import com.ea.nimble.Utility;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -89,29 +87,6 @@ class NimbleIdentityUtility {
     }
 
     public static ByteArrayOutputStream toJSONString(HashMap<String, Object> hashMap) {
-        IOException e;
-        UnsupportedEncodingException e2;
-        ByteArrayOutputStream byteArrayOutputStream = null;
-        if (hashMap != null) {
-            try {
-                byte[] bytes = new GsonBuilder().serializeNulls().create().toJson(hashMap, new TypeToken<HashMap<String, Object>>() { // from class: com.ea.nimble.identity.NimbleIdentityUtility.1
-                }.getType()).getBytes("UTF-8");
-                byteArrayOutputStream = new ByteArrayOutputStream(bytes.length);
-                try {
-                    byteArrayOutputStream.write(bytes);
-                } catch (UnsupportedEncodingException e3) {
-                    e2 = e3;
-                    e2.printStackTrace();
-                    return null;
-                } catch (IOException e4) {
-                    e = e4;
-                    e.printStackTrace();
-                    return null;
-                }
-            } catch (UnsupportedEncodingException e5) {
-                e2 = e5;
-            }
-        }
-        return byteArrayOutputStream;
+        return null;
     }
 }

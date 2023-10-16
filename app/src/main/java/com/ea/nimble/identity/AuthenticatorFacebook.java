@@ -11,10 +11,6 @@ import com.ea.nimble.Network;
 import com.ea.nimble.NetworkConnectionCallback;
 import com.ea.nimble.NetworkConnectionHandle;
 import com.ea.nimble.Utility;
-import com.ea.nimble.identity.INimbleIdentityAuthenticator;
-import com.ea.nimble.identity.NimbleIdentityError;
-import com.ea.nimble.identity.NimbleIdentityLoginParams;
-import com.facebook.FacebookOperationCanceledException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -73,26 +69,7 @@ class AuthenticatorFacebook extends AuthenticatorBase {
     }
 
     private void loginFacebook(IFacebook iFacebook, List<String> list, INimbleIdentityAuthenticator.NimbleIdentityAuthenticatorCallback nimbleIdentityAuthenticatorCallback) {
-        synchronized (this) {
-            setState(INimbleIdentityAuthenticator.NimbleIdentityAuthenticationState.NIMBLE_IDENTITY_AUTHENTICATION_GOING);
-            if (nimbleIdentityAuthenticatorCallback != null) {
-                this.m_authenticateCallbacks.add(nimbleIdentityAuthenticatorCallback);
-            }
-        }
-        iFacebook.login(list, new IFacebook.FacebookCallback() { // from class: com.ea.nimble.identity.AuthenticatorFacebook.1
-            @Override // com.ea.nimble.IFacebook.FacebookCallback
-            public void callback(IFacebook iFacebook2, boolean z, Exception exc) {
-                if (!z) {
-                    AuthenticatorFacebook.this.closeAuthentication((exc == null || (exc instanceof FacebookOperationCanceledException)) ? new NimbleIdentityError(NimbleIdentityError.NimbleIdentityErrorCode.NIMBLE_IDENTITY_ERROR_USER_CANCELLED, "Facebook login is cancelled by user") : exc instanceof Error ? (Error) exc : new Error(Error.Code.UNKNOWN, "Unknown error type from Facebook", exc));
-                } else if (!Utility.validString(iFacebook2.getAccessToken())) {
-                    AuthenticatorFacebook.this.closeAuthentication(new Error(Error.Code.SYSTEM_UNEXPECTED, "Facebook SDK gives login success without a valid Facebook token"));
-                } else {
-                    synchronized (this) {
-                        AuthenticatorFacebook.this.exchangeFacebookAccessTokenForAuthCode(iFacebook2.getAccessToken());
-                    }
-                }
-            }
-        });
+
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

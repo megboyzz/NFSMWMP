@@ -1,7 +1,7 @@
-package com.ea.ironmonkey;
+package com.ea.ironmonkey
 
-import javax.microedition.khronos.opengles.GL10;
+import javax.microedition.khronos.opengles.GL10
 
-public interface DrawFrameListener {
-    void onDrawFrame(GL10 gl10);
+interface DrawFrameListener {
+    fun onDrawFrame(gl10: GL10)
 }

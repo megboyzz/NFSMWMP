@@ -1,19 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- * 
- * Could not load the following classes:
- *  android.accounts.Account
- *  android.accounts.AccountManager
- *  android.app.Activity
- *  android.content.Context
- *  android.content.pm.PackageManager$NameNotFoundException
- *  android.net.wifi.WifiManager
- *  android.os.Build
- *  android.os.Build$VERSION
- *  android.telephony.TelephonyManager
- *  android.util.Log
- *  android.util.Patterns
- */
 package com.ea.nimble;
 
 import android.accounts.Account;
@@ -29,9 +13,6 @@ import android.util.Log;
 import android.util.Patterns;
 
 import com.ea.nimble.Log.Helper;
-import com.google.android.gms.ads.identifier.AdvertisingIdClient;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.common.GooglePlayServicesRepairableException;
 
 import java.io.File;
 import java.io.IOException;
@@ -143,67 +124,7 @@ LogSource {
      * Enabled unnecessary exception pruning
      */
     private void retrieveGoogleAdvertiserId() {
-        synchronized (this) {
-            this.m_googleAdvertiserInfoLoaded = false;
-            Thread thread = new Thread(new Runnable(){
 
-                /*
-                 * Enabled unnecessary exception pruning
-                 */
-                @Override
-                public void run() {
-                    block12: {
-                        Helper.LOGV(this, "APP_ENV: Running thread to get Google Advertising ID");
-                        if (ApplicationEnvironment.getCurrentActivity() != null) {
-                            AdvertisingIdClient.Info info2 = null;
-                            try {
-                                if (ApplicationEnvironment.isMainApplicationRunning()) {
-                                    info2 = null;
-                                    info2 = AdvertisingIdClient.getAdvertisingIdInfo(ApplicationEnvironment.getCurrentActivity());
-                                }
-                                if (info2 != null) {
-                                    Helper.LOGD(this, "APP_ENV: Setting values for Google Advertising ID and isLimitAdTrackingEnabled flag");
-                                    ApplicationEnvironmentImpl.access$002(ApplicationEnvironmentImpl.this, info2.getId());
-                                    ApplicationEnvironmentImpl.access$102(ApplicationEnvironmentImpl.this, info2.isLimitAdTrackingEnabled());
-                                    break block12;
-                                }
-                                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID - AdvertisingIdInfo is null");
-                            }
-                            catch (IOException iOException) {
-                                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID - Unrecoverable error connecting to Google Play Services");
-                            }
-                            catch (GooglePlayServicesRepairableException googlePlayServicesRepairableException) {
-                                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID - Recoverable error connecting to Google Play Services");
-                            }
-                            catch (GooglePlayServicesNotAvailableException googlePlayServicesNotAvailableException) {
-                                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID - Google Play Services not available on this device");
-                            }
-                            catch (IllegalStateException illegalStateException) {
-                                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID - Illegal State Exception " + illegalStateException.getMessage());
-                            }
-                            catch (Exception exception) {
-                                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID - General Exception " + exception.getMessage());
-                            }
-                        } else {
-                            Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID because there is no current activity");
-                        }
-                    }
-                    ApplicationEnvironmentImpl.access$202(ApplicationEnvironmentImpl.this, true);
-                }
-            });
-            try {
-                thread.start();
-            }
-            catch (VerifyError verifyError) {
-                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID because this device is not supported");
-                this.m_googleAdvertiserInfoLoaded = true;
-            }
-            catch (Throwable throwable) {
-                Helper.LOGW(this, "APP_ENV: Cannot get Google Advertising ID because this device is not supported");
-                this.m_googleAdvertiserInfoLoaded = true;
-            }
-            return;
-        }
     }
 
     private void setApplicationLanguageCode(String object, boolean bl2) {

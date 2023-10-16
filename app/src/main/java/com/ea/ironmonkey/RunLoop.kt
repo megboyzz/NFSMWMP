@@ -1,48 +1,36 @@
-package com.ea.ironmonkey;
+package com.ea.ironmonkey
 
-import android.opengl.GLSurfaceView;
+import android.opengl.GLSurfaceView
 
-public class RunLoop {
-    public static final int STATE_RUNNING = 1;
-    public static final int STATE_STOPPED = 0;
-    private GLSurfaceView glSurfaceView;
-    private int state;
+class RunLoop(private val glSurfaceView: GLSurfaceView) {
+    private var state = 0
 
-    public RunLoop(GLSurfaceView gLSurfaceView) {
-        this.glSurfaceView = gLSurfaceView;
-        updateRenderMode();
+    init { updateRenderMode() }
+
+    private external fun nativeOnRunLoopTick()
+    private fun setState(state: Int) {
+        this.state = state
+        updateRenderMode()
     }
 
-    private native void nativeOnRunLoopTick();
-
-    private void setState(int i) {
-        this.state = i;
-        updateRenderMode();
+    private fun updateRenderMode() {
+        Log.v("RunLoop", "RunLoop.state = $state")
+        if (state == STATE_STOPPED) glSurfaceView.renderMode = STATE_STOPPED
+        if (state == STATE_RUNNING) glSurfaceView.renderMode = STATE_RUNNING
     }
 
-    private void updateRenderMode() {
-        Log.v("RunLoop", "RunLoop.state = " + this.state);
-        if(state == STATE_STOPPED) glSurfaceView.setRenderMode(STATE_STOPPED);
-        if(state == STATE_RUNNING) glSurfaceView.setRenderMode(STATE_RUNNING);
+    fun join() = setState(STATE_STOPPED)
+
+    fun onRunLoopTick() {
+        if (state == STATE_RUNNING) nativeOnRunLoopTick()
     }
 
-    public int getState() {
-        return this.state;
-    }
+    fun start() = setState(STATE_RUNNING)
 
-    public void join() {
-        setState(STATE_STOPPED);
-    }
+    fun stop() = setState(STATE_STOPPED)
 
-    public void onRunLoopTick() {
-        if (state == STATE_RUNNING) nativeOnRunLoopTick();
-    }
-
-    public void start() {
-        setState(STATE_RUNNING);
-    }
-
-    public void stop() {
-        setState(STATE_STOPPED);
+    companion object {
+        const val STATE_RUNNING = 1
+        const val STATE_STOPPED = 0
     }
 }

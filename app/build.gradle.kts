@@ -87,19 +87,9 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
-
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    val google_ver = "7.0.0"
-    implementation ("org.apache.httpcomponents:httpclient:4.5")
-    implementation ("com.google.android.gms:play-services:$google_ver")
-    implementation ("com.google.android.gms:play-services-base:$google_ver")
-
-    implementation ("com.google.android.gms:play-services-ads:$google_ver")
-    implementation ("com.google.android.gms:play-services-drive:$google_ver")
+    
 
     implementation ("commons-codec:commons-codec:1.15")
-    implementation ("com.google.code.gson:gson:2.7")
-    implementation ("com.facebook.android:facebook-android-sdk:3.21.0")
 
     val fragment_version = "1.6.1"
     implementation("androidx.fragment:fragment:$fragment_version")

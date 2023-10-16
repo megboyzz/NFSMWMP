@@ -3,7 +3,10 @@ package com.ea.nimble;
 import android.text.TextUtils;
 
 import com.ea.ironmonkey.devmenu.util.Observer;
-import com.google.ads.AdSize;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -64,82 +67,14 @@ public class NetworkConnection implements LogSource, NetworkConnectionHandle, Ru
         }
     }
 
-    private String beautifyJSONString(String str) {
-        if (str == null || str.length() <= 0) {
-            return str;
+    private String beautifyJSONString(String jsonString) {
+        try {
+            JSONTokener tokener = new JSONTokener(jsonString);
+            JSONObject jsonObject = new JSONObject(tokener);
+            return jsonObject.toString(4);
+        } catch (JSONException e) {
+            return jsonString;
         }
-        String property = System.getProperty("line.separator");
-        StringBuilder sb = new StringBuilder(str.length() + 2048);
-        Stack stack = new Stack();
-        int i = 0;
-        boolean z = false;
-        boolean z2 = true;
-        for (int i2 = 0; i2 < str.length(); i2++) {
-            char charAt = str.charAt(i2);
-            z2 = z2;
-            i = i;
-            z = z;
-            switch (charAt) {
-                case '\t':
-                case AdSize.LANDSCAPE_AD_HEIGHT /* 32 */:
-                    z2 = z2;
-                    i = i;
-                    z = z;
-                    if (!z) {
-                        sb.append(charAt);
-                        z2 = z2;
-                        i = i;
-                        z = z;
-                        break;
-                    } else {
-                        break;
-                    }
-                case '\n':
-                case 13 /* 13 */:
-                    break;
-                case ',':
-                    sb.append(charAt).append(property).append(multiplyStringNTimes("\t", i));
-                    z = true;
-                    z2 = true;
-                    i = i;
-                    break;
-                case '[':
-                case '{':
-                    if (!z2) {
-                        sb.append(property).append(multiplyStringNTimes("\t", i));
-                    }
-                    i++;
-                    stack.push(Character.valueOf(charAt));
-                    sb.append(charAt).append(property).append(multiplyStringNTimes("\t", i));
-                    z = true;
-                    z2 = true;
-                    break;
-                case ']':
-                case '}':
-                    i--;
-                    char charValue = ((Character) stack.pop()).charValue();
-                    if ((charAt != '}' || charValue == '{') && (charAt != ']' || charValue == '[')) {
-                        sb.append(property).append(multiplyStringNTimes("\t", i)).append(charAt);
-                        z = true;
-                        z2 = z2;
-                        break;
-                    } else {
-                        Log.Helper.LOGE(this, "JSONString expect valid closing brackets but found none");
-                        return str;
-                    }
-                default:
-                    sb.append(charAt);
-                    z = false;
-                    z2 = false;
-                    i = i;
-                    break;
-            }
-        }
-        if (stack.isEmpty()) {
-            return sb.toString();
-        }
-        Log.Helper.LOGE(this, "JSONString did not close it's brackets, invalid json");
-        return str;
     }
 
     

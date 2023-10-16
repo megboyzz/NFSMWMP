@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 import com.ea.nimble.Log;
-import com.google.android.gms.drive.DriveFile;
 
 public class VirtualKeyboardAndroidDelegate extends KeyboardAndroid {
     private static final boolean DEBUG_LOG_ENABLED = true;
@@ -89,12 +88,10 @@ public class VirtualKeyboardAndroidDelegate extends KeyboardAndroid {
             return true;
         }
 
-        /* access modifiers changed from: private */
-        /* access modifiers changed from: public */
         private void Show() {
             VirtualKeyboardAndroidDelegate.Log("Show() from UiThread");
             setInputType(GetInputType());
-            setImeOptions(VirtualKeyboardAndroidDelegate.this.mEnterkeyLabel | VirtualKeyboardAndroidDelegate.IME_FLAG_NO_FULLSCREEN | DriveFile.MODE_READ_ONLY);
+            setImeOptions(VirtualKeyboardAndroidDelegate.this.mEnterkeyLabel | VirtualKeyboardAndroidDelegate.IME_FLAG_NO_FULLSCREEN);
             setFilters(new InputFilter[]{new InputFilter.LengthFilter(VirtualKeyboardAndroidDelegate.this.mMaxTextLength)});
             try {
                 VirtualKeyboardAndroidDelegate.this.mMainViewGroup.addView(VirtualKeyboardAndroidDelegate.this.mRelativeLayout);

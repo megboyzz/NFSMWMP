@@ -19,7 +19,7 @@ public class InAppMessage {
     }
 
     private static void initialize() {
-        Log.Helper.LOGDS("IAM", "IAM initialize", new Object[0]);
+        Log.Helper.LOGDS("IAM", "IAM initialize");
         Base.registerComponent(new InAppMessageImpl(), COMPONENT_ID);
     }
 }

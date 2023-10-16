@@ -18,7 +18,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.XmlResourceParser;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-import com.google.gson.GsonBuilder;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -127,7 +126,7 @@ public final class Utility {
     }
 
     public static String convertObjectToJSONString(Object object) {
-        return new GsonBuilder().disableHtmlEscaping().create().toJson(object);
+        return "";
     }
 
     public static boolean getTestResult() {

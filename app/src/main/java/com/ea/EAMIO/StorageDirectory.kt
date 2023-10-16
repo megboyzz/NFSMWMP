@@ -1,12 +1,6 @@
 package com.ea.EAMIO
 
-import android.annotation.SuppressLint
-import android.app.Activity
-import android.os.Environment
-import android.util.Log
-import com.ea.games.nfs13_na.BuildConfig
-
-
+//На методы есть ссылка из нативного кода но они не вызываются и не несут полезной нагрузки
 object StorageDirectory {
     @JvmStatic
     fun GetDedicatedDirectory() = ""

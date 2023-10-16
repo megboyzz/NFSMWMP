@@ -1,7 +1,6 @@
 package com.ea.easp;
 
 import android.view.KeyEvent;
-import com.eamobile.Language;
 
 public abstract class KeyboardAndroid {
     KeyboardAndroid() {
@@ -13,9 +12,9 @@ public abstract class KeyboardAndroid {
             case 4:
             case 5:
             case 6:
-            case Language.NETWORK_WARNING_TXT /*{ENCODED_INT: 24}*/:
-            case Language.UPDATES_FOUND_TITLE /*{ENCODED_INT: 25}*/:
-            case Language.UPDATES_FOUND_TXT /*{ENCODED_INT: 26}*/:
+            case 24:
+            case 25:
+            case 26:
             case 91:
                 return true;
             default:

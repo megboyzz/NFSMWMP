@@ -28,7 +28,6 @@ import com.ea.nimble.SynergyNetworkConnectionHandle;
 import com.ea.nimble.Utility;
 import com.ea.nimble.identity.INimbleIdentity;
 import com.ea.nimble.identity.INimbleIdentityAuthenticator;
-import com.google.android.gcm.GCMRegistrar;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,8 +36,6 @@ import java.util.Locale;
 
 public class PushNotification {
     public static final String COMPONENT_ID = "com.ea.nimble.pushnotificationgoogle";
-    static final String DISPLAY_MESSAGE_ACTION = "com.ea.nimble.pushnotificationgoogle.DISPLAY_MESSAGE";
-    static final String SENDER_ID = "927779459434";
     static String s_registerId = null;
 
     static void callSynergyRevokePushTokenByPid(String string2) {
@@ -180,7 +177,6 @@ public class PushNotification {
             public void callback(SynergyNetworkConnectionHandle synergyNetworkConnectionHandle) {
                 if (synergyNetworkConnectionHandle.getResponse().getError() != null) return;
                 Helper.LOGD(this, "GCM Push Token registered with synergy. Status code: " + synergyNetworkConnectionHandle.getResponse().getHttpResponse().getStatusCode());
-                GCMRegistrar.setRegisteredOnServer(context, true);
             }
         });
     }
@@ -228,7 +224,6 @@ public class PushNotification {
         SynergyNetwork.getComponent().sendGetRequest(SynergyEnvironment.getComponent().getServerUrlWithKey("synergy.m2u"), "/m2u/api/android/revokePushRegistrationId", object5, synergyNetworkConnectionHandle -> {
             if (synergyNetworkConnectionHandle.getResponse().getError() != null) return;
             d("GCM", "GCM Push Token unregistered with synergy. Status code: " + synergyNetworkConnectionHandle.getResponse().getHttpResponse().getStatusCode());
-            GCMRegistrar.setRegisteredOnServer(finalContext, false);
         });
     }
 }

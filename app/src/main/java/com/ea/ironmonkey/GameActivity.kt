@@ -25,10 +25,6 @@ import com.ea.EAMIO.StorageDirectory
 import com.ea.easp.EASPHandler
 import com.ea.games.nfs13_na.BuildConfig
 import com.ea.nimble.ApplicationLifecycle
-import com.eamobile.IDeviceData
-import com.eamobile.IDownloadActivity
-import com.eamobile.Language
-import com.eamobile.download.DeviceData
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
@@ -41,7 +37,7 @@ import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
 
-class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownloadActivity {
+class GameActivity : ComponentActivity(), DrawFrameListener {
 
     init {
         System.loadLibrary("nimble")
@@ -144,20 +140,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownl
         }
     }
 
-    fun IsSystemKey(key: Int): Boolean {
-        val systemKeys = intArrayOf(
-            Language.SPACE_UNAVAIL_TITLE,
-            Language.BTN_DOWNLOAD,
-            Language.BTN_EXIT,
-            Language.NETWORK_WARNING_TXT,
-            Language.UPDATES_FOUND_TITLE,
-            Language.UPDATES_FOUND_TXT,
-            Language.UNSUPPORTED_DEVICE_TITLE,
-            91
-        )
-        for (systemKey: Int in systemKeys) if (key == systemKey) return false
-        return true
-    }
+    fun IsSystemKey(key: Int) = false
 
     fun ShowMessage(message: String, strArr: Array<String?>, finish: Boolean) {
         Log.d(this.localClassName, "ShowMessage msg = $message finish = $finish")
@@ -351,7 +334,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownl
             gameRenderer = GameRenderer(this)
             gameRenderer!!.setDrawFrameListener(this)
             gameGLSurfaceView!!.setRenderer(gameRenderer)
-            runLoop = RunLoop(gameGLSurfaceView)
+            runLoop = RunLoop(gameGLSurfaceView!!)
             mFrameLayout = FrameLayout(this)
             mFrameLayout!!.addView(gameGLSurfaceView)
             val view = ComposeFrameLayout(this)
@@ -390,11 +373,6 @@ class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownl
         StorageDirectory.Shutdown()
         EAIO.Shutdown()
         exitProcess(0)
-    }
-
-
-    override fun onDownloadEvent(i: Int) {
-
     }
 
     override fun onDrawFrame(gl10: GL10) {
@@ -507,25 +485,6 @@ class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownl
         nativeOnRestart()
     }
 
-    override fun onResult(str: String, i: Int) {
-        Log.i("Debug", "onResult")
-        Log.w(this.localClassName, "onResult($str,$i)")
-        if (i != -1) {
-            finish()
-            Process.killProcess(Process.myPid())
-        } else {
-            val file = File(File(str).getParent() + "/.nomedia")
-            if (!file.exists()) file.createNewFile()
-            handler!!.postDelayed({ this@GameActivity.setContentView((gameGLSurfaceView)!!) }, 20)
-            if (hasWindowFocus()) {
-                state = 8
-                return
-            }
-            oldState = 8
-            state = 8
-        }
-    }
-
     public override fun onResume() {
         Log.i("Debug", "onResume")
         Log.i(this.localClassName, "onResume")
@@ -546,10 +505,6 @@ class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownl
         gameGLSurfaceView!!.onResume()
         ApplicationLifecycle.onActivityResume(this)
         nativeOnResume()
-    }
-
-    override fun onRetrievedDeviceData(deviceData: DeviceData) {
-        deviceData.setResolution(480, 800)
     }
 
     public override fun onSaveInstanceState(bundle: Bundle) {
