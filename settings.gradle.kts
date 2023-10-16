@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "NFS Most Wanted"
 include(":app")
+include(":devmenu")
+include(":devmenu:domain")
+include(":devmenu:data")
