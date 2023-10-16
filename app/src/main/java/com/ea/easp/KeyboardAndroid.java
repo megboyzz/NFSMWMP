@@ -3,7 +3,6 @@ package com.ea.easp;
 import android.view.KeyEvent;
 import com.eamobile.Language;
 
-/* access modifiers changed from: package-private */
 public abstract class KeyboardAndroid {
     KeyboardAndroid() {
     }

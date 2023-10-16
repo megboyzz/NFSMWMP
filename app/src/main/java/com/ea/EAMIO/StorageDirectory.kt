@@ -1,37 +1,32 @@
-package com.ea.EAMIO;
+package com.ea.EAMIO
 
-import android.app.Activity;
-import android.os.Environment;
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.os.Environment
+import android.util.Log
+import com.ea.games.nfs13_na.BuildConfig
 
-public class StorageDirectory {
-    public static Activity sActivity;
 
-    public static String GetDedicatedDirectory() {
-        return "Android/data/" + sActivity.getClass().getPackage().getName() + "/files/";
-    }
+object StorageDirectory {
+    @JvmStatic
+    fun GetDedicatedDirectory() = ""
 
-    public static String GetInternalStorageDirectory() {
-        return sActivity.getFilesDir().getAbsolutePath();
-    }
+    @JvmStatic
+    fun GetInternalStorageDirectory() = ""
 
-    public static String GetPrimaryExternalStorageDirectory() {
-        return Environment.getExternalStorageDirectory().getAbsolutePath();
-    }
+    @JvmStatic
+    fun GetPrimaryExternalStorageDirectory() = ""
 
-    public static String GetPrimaryExternalStorageState() {
-        return Environment.getExternalStorageState();
-    }
+    @JvmStatic
+    fun GetPrimaryExternalStorageState() = ""
 
-    public static void Shutdown() {
-        ShutdownNativeImpl();
-    }
+    @JvmStatic
+    fun Shutdown() = ShutdownNativeImpl()
 
-    private static native void ShutdownNativeImpl();
+    private external fun ShutdownNativeImpl()
 
-    public static void Startup(Activity activity) {
-        sActivity = activity;
-        StartupNativeImpl();
-    }
+    @JvmStatic
+    fun Startup() = StartupNativeImpl()
 
-    private static native void StartupNativeImpl();
+    private external fun StartupNativeImpl()
 }

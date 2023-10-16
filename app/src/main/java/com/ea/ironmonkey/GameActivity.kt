@@ -359,7 +359,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener, IDeviceData, IDownl
             setContentView(mFrameLayout!!)
             Log.d(this.localClassName, "Init EAIO/EAMIO")
             EAIO.Startup(this)
-            StorageDirectory.Startup(this)
+            StorageDirectory.Startup()
             if (easpHandler == null) {
                 Log.d(this.localClassName, "Init EASPHandler")
                 easpHandler = EASPHandler(this, mFrameLayout!!, gameGLSurfaceView!!)
