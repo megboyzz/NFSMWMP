@@ -1,32 +1,22 @@
-package com.ea.ironmonkey;
+package com.ea.ironmonkey
 
-import com.bda.controller.ControllerListener;
-import com.bda.controller.KeyEvent;
-import com.bda.controller.MotionEvent;
-import com.bda.controller.StateEvent;
-
-public class MogaController implements ControllerListener {
-    /* access modifiers changed from: package-private */
-    public native void nativeOnKeyEvent(KeyEvent keyEvent);
-
-    /* access modifiers changed from: package-private */
-    public native void nativeOnMotionEvent(MotionEvent motionEvent);
-
-    /* access modifiers changed from: package-private */
-    public native void nativeOnStateEvent(StateEvent stateEvent);
-
-    @Override // com.bda.controller.ControllerListener
-    public void onKeyEvent(KeyEvent keyEvent) {
-        nativeOnKeyEvent(keyEvent);
+import com.bda.controller.ControllerListener
+import com.bda.controller.KeyEvent
+import com.bda.controller.MotionEvent
+import com.bda.controller.StateEvent
+object MogaController : ControllerListener {
+    external fun nativeOnKeyEvent(keyEvent: KeyEvent?)
+    external fun nativeOnMotionEvent(motionEvent: MotionEvent?)
+    external fun nativeOnStateEvent(stateEvent: StateEvent?)
+    override fun onKeyEvent(keyEvent: KeyEvent) {
+        nativeOnKeyEvent(keyEvent)
     }
 
-    @Override // com.bda.controller.ControllerListener
-    public void onMotionEvent(MotionEvent motionEvent) {
-        nativeOnMotionEvent(motionEvent);
+    override fun onMotionEvent(motionEvent: MotionEvent) {
+        nativeOnMotionEvent(motionEvent)
     }
 
-    @Override // com.bda.controller.ControllerListener
-    public void onStateEvent(StateEvent stateEvent) {
-        nativeOnStateEvent(stateEvent);
+    override fun onStateEvent(stateEvent: StateEvent) {
+        nativeOnStateEvent(stateEvent)
     }
 }

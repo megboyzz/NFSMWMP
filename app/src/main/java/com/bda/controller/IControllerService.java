@@ -6,8 +6,7 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
 
-interface IControllerService
-extends IInterface {
+interface IControllerService extends IInterface {
     float getAxisValue(int var1, int var2) throws RemoteException;
 
     int getInfo(int var1) throws RemoteException;

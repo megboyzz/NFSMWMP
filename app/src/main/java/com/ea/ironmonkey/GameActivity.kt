@@ -4,26 +4,26 @@ import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.ActivityInfo
+import android.graphics.BitmapFactory
 import android.hardware.SensorManager
 import android.media.AudioManager
 import android.opengl.GLES20
+import android.opengl.GLUtils
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
 import android.os.PowerManager
 import android.os.PowerManager.WakeLock
-import android.os.Process
 import android.util.DisplayMetrics
+import android.util.Log
 import android.view.KeyEvent
-import android.view.ViewParent
 import android.view.inputmethod.InputMethodManager
-import android.widget.FrameLayout
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.Lifecycle
 import com.ea.EAIO.EAIO
 import com.ea.EAMIO.StorageDirectory
 import com.ea.easp.EASPHandler
 import com.ea.games.nfs13_na.BuildConfig
+import com.ea.games.nfs13_na.R
 import com.ea.nimble.ApplicationLifecycle
 import java.io.BufferedReader
 import java.io.File
@@ -36,6 +36,7 @@ import kotlin.math.min
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
+
 //TODO при заходе в магазин - вылет
 class GameActivity : ComponentActivity(), DrawFrameListener {
 
@@ -44,19 +45,16 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         System.loadLibrary("app")
     }
 
-    private var laststate = 0
-    private var lifecycleOldSystem = 0
-    private var easpHandler: EASPHandler? = null
-    private var splash: SplashScreen? = null
-    private var gameRenderer: GameRenderer? = null
-    var runLoop: RunLoop? = null
-    var gameGLSurfaceView: GameGLSurfaceView? = null
-    var accelerometer: Accelerometer? = null
-    private var handler: Handler? = null
-    private var mFrameLayout: FrameLayout? = null
-    private var mWakeLock: WakeLock? = null
     private var splashDelay: Long = 0
     private var splashTimer: Long = 0
+
+    private lateinit var easpHandler: EASPHandler
+    private lateinit var gameRenderer: GameRenderer
+    lateinit var runLoop: RunLoop
+    private lateinit var gameGLSurfaceView: GameGLSurfaceView
+    private lateinit var accelerometer: Accelerometer
+    private lateinit var mWakeLock: WakeLock
+    private lateinit var mAudioManager: AudioManager
 
     companion object {
 
@@ -66,8 +64,6 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
 
         @JvmField
         var state = 0
-
-        private var mAudioManager: AudioManager? = null
 
         //В нативном коде эти методы помечны как статические
         @JvmStatic
@@ -83,17 +79,20 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         val osVersion = Build.VERSION.RELEASE
     }
 
-    //Метод вызвывется из нативного кода поэтому нужно его существование
+    //Метод вызвывется из нативного кода поэтому нужно их существование
     fun installWallpaper() {}
     fun needInstallWallpaper() = false
-    fun openURL(str: String?) = Log.d("OpenURL", str)
-    fun openURLinBrowser(str: String?) = Log.d("OpenURLinBrowser", str)
+    fun openURL(str: String) = Log.d("OpenURL", str)
+    fun openURLinBrowser(str: String) = Log.d("OpenURLinBrowser", str)
     fun getDisplayMetrics() = resources.displayMetrics
     fun GetViewRoot() = window.decorView.getRootView().parent
     fun CallGC() {
         Log.d(this.localClassName, "Call garbage collector")
         System.gc()
     }
+    fun getGameGLSurfaceView() = gameGLSurfaceView
+    fun getAccelerometer() = accelerometer
+
 
     private fun ForceHideVirtualKeyboard() {
         val currentFocus = currentFocus
@@ -109,13 +108,10 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
 
     private fun wakeLockAcquire() {
         val powerManager = getSystemService(POWER_SERVICE) as PowerManager
-        if (mWakeLock == null) {
-            mWakeLock = powerManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, this.localClassName)
-        }
-
-        if (!mWakeLock!!.isHeld) {
+        mWakeLock = powerManager.newWakeLock(10, localClassName)
+        if (!mWakeLock.isHeld) {
             try {
-                mWakeLock!!.acquire(10*60*1000L /*10 minutes*/)
+                mWakeLock.acquire(10*60*1000L /*10 minutes*/)
             } catch (e: SecurityException) {
                 Log.w(this.localClassName, "Missing WAKE_LOCK permission.")
             }
@@ -145,7 +141,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
                 finish()
             }
         }
-        handler!!.postDelayed({ dialog.show() }, 20)
+        dialog.show()
     }
 
     fun calcPerformanceScore(
@@ -294,70 +290,64 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
     }
 
     public override fun onCreate(bundle: Bundle?) {
-        Log.i("Debug", "onCreate")
-        Log.setEnable(true)
-        Log.i(this.localClassName, "onCreate")
-        Log.i(this.localClassName, "GameActivity.state = $state")
         super.onCreate(bundle)
-        //instance = this
-        if (lifecycle.currentState == Lifecycle.State.DESTROYED) {
-            Log.w(this.localClassName, "onCreate called on destroyed app, finishing")
+
+        val className = this.localClassName
+        val currentState = lifecycle.currentState
+
+        Log.i(className, "onCreate")
+        Log.i(className, "GameActivity.state = $state")
+
+        if (currentState == Lifecycle.State.DESTROYED) {
+            Log.w(className, "onCreate called on destroyed app, finishing")
             finish()
-        } else if (lifecycle.currentState >= Lifecycle.State.CREATED) {
-            Log.w(
-                this.localClassName,
-                "onCreate ignored, lifecycle is already ${lifecycle.currentState}"
-            )
-        } else {
-            handler = Handler()
-            val window = window
-            //window.setFlags(1024, 1024)
-            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-            requestWindowFeature(1)
-            Log.d("Model", Build.MODEL)
-            mAudioManager = getSystemService(AUDIO_SERVICE) as AudioManager
-            val sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
-            val defaultSensor = sensorManager.getDefaultSensor(1)
-            val rotation = getWindow().windowManager.defaultDisplay.rotation
-            if (defaultSensor != null) {
-                accelerometer = Accelerometer(sensorManager, defaultSensor, rotation)
-            }
-            gameGLSurfaceView = GameGLSurfaceView(this)
-            gameRenderer = GameRenderer(this)
-            gameRenderer!!.setDrawFrameListener(this)
-            gameGLSurfaceView!!.setRenderer(gameRenderer)
-            runLoop = RunLoop(gameGLSurfaceView!!)
-            mFrameLayout = FrameLayout(this)
-            mFrameLayout!!.addView(gameGLSurfaceView)
-            val view = ComposeFrameLayout(this)
-            mFrameLayout!!.addView(view)
-            setContentView(mFrameLayout!!)
-            Log.d(this.localClassName, "Init EAIO/EAMIO")
-            EAIO.Startup(this)
-            StorageDirectory.Startup()
-            if (easpHandler == null) {
-                Log.d(this.localClassName, "Init EASPHandler")
-                easpHandler = EASPHandler(this, mFrameLayout!!, gameGLSurfaceView!!)
-                easpHandler!!.onCreate()
-            }
-            ApplicationLifecycle.onActivityCreate(bundle, this)
-            Log.d(this.localClassName, "nativeOnCreate")
-            nativeOnCreate()
+            return
         }
+
+        if (currentState >= Lifecycle.State.CREATED) {
+            Log.w(className, "onCreate ignored, lifecycle is already $currentState")
+            return
+        }
+
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+        requestWindowFeature(1)
+        Log.d("Model", Build.MODEL)
+        mAudioManager = getSystemService(AUDIO_SERVICE) as AudioManager
+
+        val sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
+        val defaultSensor = sensorManager.getDefaultSensor(1)
+        val rotation = window.windowManager.defaultDisplay.rotation
+
+        accelerometer = Accelerometer(sensorManager, defaultSensor, rotation)
+
+        gameGLSurfaceView = GameGLSurfaceView(this)
+        gameRenderer = GameRenderer(this)
+        gameRenderer.setDrawFrameListener(this)
+        gameGLSurfaceView.setRenderer(gameRenderer)
+        runLoop = RunLoop(gameGLSurfaceView)
+
+        val frameLayout = ComposeFrameLayout(this, gameGLSurfaceView = gameGLSurfaceView)
+        setContentView(frameLayout)
+
+        Log.d(className, "Init EAIO/EAMIO")
+        EAIO.Startup(this)
+        StorageDirectory.Startup()
+
+        Log.d(className, "Init EASPHandler")
+        easpHandler = EASPHandler(this, frameLayout, gameGLSurfaceView)
+        easpHandler.onCreate()
+
+        ApplicationLifecycle.onActivityCreate(bundle, this)
+        Log.d(className, "nativeOnCreate")
+        nativeOnCreate()
     }
+
 
     public override fun onDestroy() {
         Log.i("Debug", "onDestroy")
         Log.i(this.localClassName, "onDestroy")
         super.onDestroy()
-        if (lifecycleOldSystem >= 5) {
-            Log.w(
-                this.localClassName,
-                "onDestroy ignored, lifecycle is already ${lifecycle.currentState}"
-            )
-            return
-        }
-        easpHandler!!.onDestroy()
+        easpHandler.onDestroy()
         if (state == 8) {
             ApplicationLifecycle.onActivityDestroy(this)
             nativeOnDestroy()
@@ -368,17 +358,13 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
     }
 
     override fun onDrawFrame(gl10: GL10) {
-        Log.i("state_in", "state = $state")
-        if (state != laststate) {
-            Log.d(this.localClassName, "onDrawFrame state=$state")
-            laststate = state
-        }
+        Log.d(this.localClassName, "onDrawFrame state=$state")
         var isStarted = false
         when (state) {
             STATE_RESTORE_CONTEXT -> {
                 run {
-                    Log.i("state_in splash is null", (this.splash == null).toString() + "")
-                    if (this.splash == null) {
+                    //Log.i("state_in splash is null", (this.splash == null).toString() + "")
+                    /*if (this.splash == null) {
                         this.splash = SplashScreen(this)
                         this.splash!!.init(
                             gl10,
@@ -386,7 +372,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
                             this.gameRenderer!!.height
                         )
                         this.splashDelay = System.currentTimeMillis() + 2000
-                    }
+                    }*/
                     if (this.splashDelay < System.currentTimeMillis() /*&& hasWindowFocus()*/) {
                         if (oldState != 8) {
                             state = oldState
@@ -410,20 +396,21 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
                 if (splashTimer < System.currentTimeMillis() && nativeRestoreContext()) {
                     nativeOnStart()
                     nativeOnResume()
-                    gameRenderer!!.setDrawFrameListener(null)
+                    gameRenderer.setDrawFrameListener(null)
                     isStarted = true
                 }
             }
         }
-        GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f)
+        //GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f)
+        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT or GLES20.GL_DEPTH_BUFFER_BIT)
         GLES20.glClear(16640)
-        if (splash != null) {
+       /* if (splash != null) {
             splash!!.draw(gl10, gameRenderer!!.width, gameRenderer!!.height)
         }
         if (isStarted && splash != null) {
             splash!!.destroy(gl10)
             splash = null
-        }
+        }*/
     }
 
     override fun onKeyDown(i: Int, keyEvent: KeyEvent): Boolean {
@@ -435,7 +422,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
             return true
         }
         val scanCode = keyEvent.scanCode
-        gameGLSurfaceView!!.queueEvent { nativeOnPhysicalKeyDown(i, scanCode) }
+        gameGLSurfaceView.queueEvent { nativeOnPhysicalKeyDown(i, scanCode) }
         return IsSystemKey(i)
     }
 
@@ -445,7 +432,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
             return true
         }
         val scanCode = keyEvent.scanCode
-        gameGLSurfaceView!!.queueEvent { nativeOnPhysicalKeyUp(i, scanCode) }
+        gameGLSurfaceView.queueEvent { nativeOnPhysicalKeyUp(i, scanCode) }
         return IsSystemKey(i)
     }
 
@@ -454,18 +441,10 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         Log.i("Debug", "onPause")
         Log.i(this.localClassName, "onPause state=$state")
         mAudioManager!!.setStreamMute(3, true)
-        if (lifecycleOldSystem != 3) {
-            Log.w(
-                this.localClassName,
-                "onPause ignored, lifecycle is currently ${lifecycle.currentState}"
-            )
-            return
-        }
-        gameGLSurfaceView!!.onPause()
-
+        gameGLSurfaceView.onPause()
+        onWindowFocusChanged(false)
         ApplicationLifecycle.onActivityPause(this)
         nativeOnPause()
-        splash = null
     }
 
     public override fun onRestart() {
@@ -485,16 +464,9 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         if (state != 7) {
             oldState = state
             state = 8
-            gameRenderer!!.setDrawFrameListener(this)
+            gameRenderer.setDrawFrameListener(this)
         }
-        if (lifecycleOldSystem == 3) {
-            Log.w(
-                this.localClassName,
-                "onResume ignored, lifecycle is currently ${lifecycle.currentState}"
-            )
-            return
-        }
-        gameGLSurfaceView!!.onResume()
+        gameGLSurfaceView.onResume()
         ApplicationLifecycle.onActivityResume(this)
         nativeOnResume()
     }
@@ -512,7 +484,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         Log.i(this.localClassName, "onStart 1")
         wakeLockAcquire()
         Log.i(this.localClassName, "onStart 2")
-        if (lifecycleOldSystem < 2 || lifecycleOldSystem >= 4) {
+        if (lifecycle.currentState < Lifecycle.State.STARTED || lifecycle.currentState == Lifecycle.State.DESTROYED) {
             Log.i(this.localClassName, "onStart 3")
             Log.i(this.localClassName, "nativeOnStart")
             nativeOnStart()
@@ -560,7 +532,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
                 mAudioManager!!.setStreamMute(3, true)
                 oldState = state
                 state = 7
-                gameRenderer!!.setDrawFrameListener(this)
+                gameRenderer.setDrawFrameListener(this)
             }
         }
         ApplicationLifecycle.onActivityWindowFocusChanged(hasFocus, this)

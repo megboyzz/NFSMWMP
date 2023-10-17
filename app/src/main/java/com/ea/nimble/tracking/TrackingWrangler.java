@@ -1,9 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.ea.nimble.tracking;
 
-import com.ea.ironmonkey.devmenu.util.Observer;
 import com.ea.nimble.ApplicationEnvironment;
 import com.ea.nimble.Base;
 import com.ea.nimble.Component;
@@ -90,9 +86,6 @@ public class TrackingWrangler extends Component implements LogSource, ITracking 
     @Override
     public void logEvent(String string2, Map<String, String> map) {
         Log.Helper.LOGD(this, "Logging event, " + string2);
-        if(m_trackingComponents != null)
-            for(ITracking tracking : m_trackingComponents)
-                tracking.logEvent(string2, map);
     }
 
     @Override

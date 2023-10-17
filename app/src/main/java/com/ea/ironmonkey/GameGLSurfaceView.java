@@ -2,6 +2,7 @@ package com.ea.ironmonkey;
 
 import android.opengl.GLSurfaceView;
 import android.os.Build;
+import android.util.Log;
 import android.view.MotionEvent;
 
 import javax.microedition.khronos.egl.EGL10;

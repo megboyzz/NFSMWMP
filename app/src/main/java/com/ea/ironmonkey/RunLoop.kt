@@ -1,6 +1,7 @@
 package com.ea.ironmonkey
 
 import android.opengl.GLSurfaceView
+import android.util.Log
 
 class RunLoop(private val glSurfaceView: GLSurfaceView) {
     private var state = 0

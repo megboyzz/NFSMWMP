@@ -15,7 +15,7 @@ class GameRenderer(private val activity: GameActivity) : GLSurfaceView.Renderer 
         if (drawFrameListener != null) {
             drawFrameListener!!.onDrawFrame(gl10)
         } else {
-            activity.runLoop!!.onRunLoopTick()
+            activity.runLoop.onRunLoopTick()
         }
     }
 
