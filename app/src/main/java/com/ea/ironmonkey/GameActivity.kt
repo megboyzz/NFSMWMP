@@ -51,7 +51,9 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
     private lateinit var easpHandler: EASPHandler
     private lateinit var gameRenderer: GameRenderer
     lateinit var runLoop: RunLoop
-    private lateinit var gameGLSurfaceView: GameGLSurfaceView
+    lateinit var gameGLSurfaceView: GameGLSurfaceView
+      //  get() = field
+       // private set
     private lateinit var accelerometer: Accelerometer
     private lateinit var mWakeLock: WakeLock
     private lateinit var mAudioManager: AudioManager
@@ -90,7 +92,7 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         Log.d(this.localClassName, "Call garbage collector")
         System.gc()
     }
-    fun getGameGLSurfaceView() = gameGLSurfaceView
+    //fun getGameGLSurfaceView() = gameGLSurfaceView
     fun getAccelerometer() = accelerometer
 
 
