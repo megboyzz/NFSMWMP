@@ -25,6 +25,7 @@ import com.ea.easp.EASPHandler
 import com.ea.games.nfs13_na.BuildConfig
 import com.ea.games.nfs13_na.R
 import com.ea.nimble.ApplicationLifecycle
+import com.megboyzz.devmenu.data.util.SaveFileObserver
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
@@ -52,11 +53,14 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
     private lateinit var gameRenderer: GameRenderer
     lateinit var runLoop: RunLoop
     lateinit var gameGLSurfaceView: GameGLSurfaceView
-      //  get() = field
-       // private set
-    private lateinit var accelerometer: Accelerometer
+    lateinit var accelerometer: Accelerometer
     private lateinit var mWakeLock: WakeLock
     private lateinit var mAudioManager: AudioManager
+
+    private val saveFile = "/data/data/${BuildConfig.APPLICATION_ID}/files/var/nfstr_save.sb"
+    private val dest = "/sdcard/Android/data/${BuildConfig.APPLICATION_ID}/files/saveTracking"
+
+    private val saveFileObserver = SaveFileObserver(saveFile, dest)
 
     companion object {
 
@@ -92,8 +96,6 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
         Log.d(this.localClassName, "Call garbage collector")
         System.gc()
     }
-    //fun getGameGLSurfaceView() = gameGLSurfaceView
-    fun getAccelerometer() = accelerometer
 
 
     private fun ForceHideVirtualKeyboard() {
@@ -292,6 +294,9 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
     }
 
     public override fun onCreate(bundle: Bundle?) {
+
+        saveFileObserver.startWatching()
+
         super.onCreate(bundle)
 
         val className = this.localClassName
@@ -346,6 +351,9 @@ class GameActivity : ComponentActivity(), DrawFrameListener {
 
 
     public override fun onDestroy() {
+
+        saveFileObserver.stopWatching()
+
         Log.i("Debug", "onDestroy")
         Log.i(this.localClassName, "onDestroy")
         super.onDestroy()

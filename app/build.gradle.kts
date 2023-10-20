@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(project(":devmenu:data"))
     testImplementation(libs.junit.v412)
     //testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

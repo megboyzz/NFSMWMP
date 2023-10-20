@@ -1,22 +1,52 @@
 package com.megboyzz.devmenu.data.util
 
-import android.os.FileObserver
 import android.util.Log
 import java.io.File
+import kotlin.concurrent.thread
 
 
 class SaveFileObserver(
-    private val source: File,
-    private val destinationFolder: File
-) : FileObserver(source.absolutePath) {
+    private val source: String,
+    private val destinationFolder: String
+) : BaseObserver(source) {
 
-    override fun onEvent(event: Int, path: String?) {
-        if (event and CREATE != 0 || event and MODIFY != 0) {
-            Log.d("FileObserver", "File created or modified: $source")
-            source copyToThe destinationFolder
+    private var countSnapshots: Int = 1
+
+    private val checkList = listOf(
+        FileEvent.CLOSE_WRITE,
+        FileEvent.MODIFY,
+        FileEvent.DELETE,
+        FileEvent.CREATE,
+        FileEvent.ACCESS,
+        FileEvent.OPEN,
+        FileEvent.CLOSE_NOWRITE
+        )
+    init {
+        val dest = File(destinationFolder)
+        if(dest.isFile) dest.delete()
+        if(!dest.exists()) dest.mkdir()
+        val list = dest.list{
+            dir, name -> name.endsWith(".sb")
+        }
+        list?.forEach { File(dest, it).delete() }
+        File(source) copyToThe File(destinationFolder, "BASE.sb")
+    }
+
+    override fun onEvent(event: FileEvent, path: String?) {
+        Log.i("SaveFileObserver", "onEvent $event")
+        if (event in checkList) {
+            Log.d("SaveFileObserver", "File created or modified: $source")
+            File(source) copyToThe File(destinationFolder, "$event-$countSnapshots.sb")
+            countSnapshots++
         }
     }
 
-    private infix fun File.copyToThe(destination: File) = this.copyTo(destination)
+    override fun stopWatching() {
+        super.stopWatching()
+        val filesList = File(destinationFolder).list{ _, name -> name.endsWith(".sb") }?.map { it }
+        if (filesList != null) {
+            zipAll(destinationFolder, filesList)
+        }
+    }
 }
 
