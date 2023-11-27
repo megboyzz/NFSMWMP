@@ -1,4 +1,4 @@
-package com.megboyzz.devmenu.domain.usecases.files
+package com.megboyzz.devmenu.domain.usecases.replacement
 
 import com.megboyzz.devmenu.domain.repository.ReplacementRepository
 import java.io.File

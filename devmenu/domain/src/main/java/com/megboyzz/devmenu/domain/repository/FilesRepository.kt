@@ -11,4 +11,10 @@ interface FilesRepository {
 
     fun getFileProps(file: File): FileProps
 
+    suspend fun hideFile(file: File): Boolean
+
+    suspend fun unHideFile(file: File): Boolean
+
+    val allHidedFiles: List<File>
+
 }

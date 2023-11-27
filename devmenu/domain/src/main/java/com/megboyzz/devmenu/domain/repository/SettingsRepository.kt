@@ -1,11 +1,10 @@
 package com.megboyzz.devmenu.domain.repository
 
-import com.megboyzz.devmenu.domain.entities.Settings
+import com.megboyzz.devmenu.domain.entities.GameLang
 
 interface SettingsRepository {
 
-    suspend fun getSettings(): Settings
+    fun setGameLang(lang: GameLang): Boolean
 
-    suspend fun setSettings(settings: Settings)
 
 }

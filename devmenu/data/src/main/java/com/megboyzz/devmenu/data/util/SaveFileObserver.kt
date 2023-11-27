@@ -15,10 +15,10 @@ class SaveFileObserver(
     private val checkList = listOf(
         FileEvent.CLOSE_WRITE,
         FileEvent.MODIFY,
-        FileEvent.DELETE,
+        //FileEvent.DELETE,
         FileEvent.CREATE,
-        FileEvent.ACCESS,
-        FileEvent.OPEN,
+        //FileEvent.ACCESS,
+        //FileEvent.OPEN,
         FileEvent.CLOSE_NOWRITE
         )
     init {

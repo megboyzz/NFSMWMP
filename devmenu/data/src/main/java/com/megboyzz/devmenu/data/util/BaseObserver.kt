@@ -17,15 +17,13 @@ abstract class BaseObserver(source: String) : FileObserver(source) {
     @OptIn(ExperimentalStdlibApi::class)
     final override fun onEvent(event: Int, path: String?) {
 
-        if(eventQueue.size < 3) eventQueue.add(event)
-
         val e = FileEvent.entries.find { it.value == event }
 
         val fileEvent = e ?: FileEvent.UNKNOWN
 
         Log.i("BaseObserver", "event code = ${event.toHexString()}, FileEvent is $fileEvent")
 
-        if(hasLastThreeEvents()) onEvent(fileEvent, path)
+        onEvent(fileEvent, path)
     }
 
     private fun hasLastThreeEvents() = runCatching {
@@ -38,7 +36,9 @@ abstract class BaseObserver(source: String) : FileObserver(source) {
         this.list { dir, _ -> Regex(regex).matches(dir.absolutePath) }?.asList() ?: listOf()
 
 
-    protected infix fun File.copyToThe(destination: File) = this.copyTo(destination, overwrite = true)
+    protected infix fun File.copyToThe(destination: File){
+        this.copyTo(destination, overwrite = true)
+    }
 
     protected fun zipAll(outputFolder: String, filesToCompress: List<String>) {
         if(filesToCompress.isEmpty()){
